@@ -20,6 +20,7 @@ export const Text = styled.p`
   font-weight: 400;
   font-family: "Intro Book", sans-serif;
   color: ${props => (props.white ? "#fff" : "#2b2b2b")};
+  margin: 0;
   line-height: 2em;
   ${props =>
     props.phone &&
