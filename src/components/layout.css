@@ -56,6 +56,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: inherit;
 }
 a:active,
 a:hover {
@@ -398,7 +400,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin: 0;
 }
 figure {
   margin-left: 0;
