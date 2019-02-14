@@ -16,7 +16,7 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-const HomePage = ({ data }) => (
+const HomePage = () => (
   <Layout>
     <Splash />
     <Content>
@@ -38,15 +38,5 @@ const HomePage = ({ data }) => (
     <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
   </Layout>
 );
-
-export const query = graphql`
-  query HomePageQuery {
-    site {
-      siteMetadata {
-        description
-      }
-    }
-  }
-`;
 
 export default HomePage;

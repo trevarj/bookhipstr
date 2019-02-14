@@ -19,7 +19,6 @@ const Layout = ({ children }) => (
     render={data => (
       <div>
         <Navigation siteTitle={data.site.siteMetadata.title} />
-
         <main>{children}</main>
         <Footer />
       </div>
