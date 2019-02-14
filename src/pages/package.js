@@ -1,5 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import Splash from "../components/splash";
 
 export default function Package({
   data // this prop will be injected by the GraphQL query below.
@@ -7,7 +9,8 @@ export default function Package({
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <div className="blog-post-container">
+    <Layout>
+      <Splash />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
@@ -16,7 +19,7 @@ export default function Package({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </Layout>
   );
 }
 

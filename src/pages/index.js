@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Title, Text, Subtitle, Column } from "../theme/index";
+import { Text, Subtitle, Column } from "../theme/index";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
-import { graphql } from "gatsby";
 import Splash from "../components/splash";
 import styled from "styled-components";
+import Packages from "../components/packages";
 
 const Content = styled.div`
   width: 100%;
-  height: 450px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,6 +16,7 @@ const Content = styled.div`
 
 const HomePage = () => (
   <Layout>
+    <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
     <Splash />
     <Content>
       <Column width="50%">
@@ -35,7 +34,7 @@ const HomePage = () => (
         </Text>
       </Column>
     </Content>
-    <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
+    <Packages />
   </Layout>
 );
 
