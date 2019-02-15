@@ -5,6 +5,9 @@ import SEO from "../components/seo";
 import Splash from "../components/splash";
 import styled from "styled-components";
 import Packages from "../components/packages";
+import Location from "../components/location";
+import Banner from "../components/banner";
+import Logos from "../components/logos";
 
 const Content = styled.div`
   width: 100%;
@@ -35,6 +38,9 @@ const HomePage = () => (
       </Column>
     </Content>
     <Packages />
+    <Location />
+    <Banner title="TRUSTED BY GREAT COMPANIES AND GREAT PEOPLE" />
+    <Logos />
   </Layout>
 );
 

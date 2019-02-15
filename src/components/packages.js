@@ -39,8 +39,6 @@ const Grid = styled.div`
 `;
 
 const PackageLink = ({ post }) => {
-  console.log(post);
-
   return (
     <Link to={post.frontmatter.path}>
       <PackageBox background={`url('${post.frontmatter.image}')`} />

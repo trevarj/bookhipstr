@@ -59,9 +59,9 @@ class Navigation extends Component {
             <Text>Gallery</Text>
           </a>
           <a href="tel:8442665447">
-            <Text phone>844.266.5447</Text>
+            <Text bold>844.266.5447</Text>
           </a>
-          <Button>Contact Us</Button>
+          <Button nav>Contact Us</Button>
         </Row>
       </Header>
     );
