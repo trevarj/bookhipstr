@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3em 0;
+  margin: 4em 0 2em 0;
 `;
 
 export default function Location() {
@@ -26,7 +26,7 @@ export default function Location() {
           <Text large>Don't see your location?</Text>
           <Button>Get in touch</Button>
         </Column>
-        <div style={{ width: "35%", height: "400px" }}>
+        <div style={{ width: "35%", height: "375px" }}>
           <StaticQuery
             query={graphql`
               query {

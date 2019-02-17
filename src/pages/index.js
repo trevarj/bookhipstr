@@ -8,6 +8,7 @@ import Packages from "../components/packages";
 import Location from "../components/location";
 import Banner from "../components/banner";
 import Logos from "../components/logos";
+import Experience from "../components/experience";
 
 const Content = styled.div`
   width: 100%;
@@ -39,6 +40,7 @@ const HomePage = () => (
     </Content>
     <Packages />
     <Location />
+    <Experience />
     <Banner title="TRUSTED BY GREAT COMPANIES AND GREAT PEOPLE" />
     <Logos />
   </Layout>

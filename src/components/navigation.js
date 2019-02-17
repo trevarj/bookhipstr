@@ -20,7 +20,7 @@ const Header = styled.header`
 `;
 
 const Row = styled.div`
-  width: 350px;
+  width: 375px;
   margin: ${props => props.margin};
   display: flex;
   align-items: center;
