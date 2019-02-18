@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 720px) {
+    text-align: center;
+  }
 `;
 
 const Image = styled.img`

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
 import { Subtitle } from "../theme/index";
+import Img from "gatsby-image";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -17,6 +18,7 @@ const PackageBox = styled.div`
   height: 100%;
   border: 1.5px solid transparent;
   background: ${props => props.background};
+  object-fit: contain;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
@@ -36,12 +38,15 @@ const Grid = styled.div`
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 400px;
+  @media (max-width: 720px) {
+    grid-auto-rows: 375px;
+  }
 `;
 
 const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
-      <PackageBox background={`url('${post.frontmatter.image.id}')`} />
+      <PackageBox background={`url('${post.frontmatter.image}')`} />
     </Link>
   );
 };
@@ -50,21 +55,16 @@ const Packages = () => (
   <StaticQuery
     query={graphql`
       query {
-        allJavascriptFrontmatter {
+        allMarkdownRemark {
           edges {
             node {
+              id
+              excerpt(pruneLength: 250)
               frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                path
                 title
-                written
-                layoutType
-                path
-                category
-                description
-                error
-                path
-                image {
-                  id
-                }
+                image
               }
             }
           }
@@ -75,7 +75,7 @@ const Packages = () => (
       <Wrapper>
         <Subtitle>Packages</Subtitle>
         <Grid>
-          {data.allJavascriptFrontmatter.edges.map(edge => (
+          {data.allMarkdownRemark.edges.map(edge => (
             <PackageLink key={edge.node.id} post={edge.node} />
           ))}
         </Grid>
