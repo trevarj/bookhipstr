@@ -25,6 +25,7 @@ module.exports = {
         appId: "4zixb7fydtpw"
       }
     },
+    `gatsby-transformer-javascript-frontmatter`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

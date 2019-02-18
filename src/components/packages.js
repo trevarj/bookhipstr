@@ -41,7 +41,7 @@ const Grid = styled.div`
 const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
-      <PackageBox background={`url('${post.frontmatter.image}')`} />
+      <PackageBox background={`url('${post.frontmatter.image.id}')`} />
     </Link>
   );
 };
@@ -50,16 +50,21 @@ const Packages = () => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark {
+        allJavascriptFrontmatter {
           edges {
             node {
-              id
-              excerpt(pruneLength: 250)
               frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                path
                 title
-                image
+                written
+                layoutType
+                path
+                category
+                description
+                error
+                path
+                image {
+                  id
+                }
               }
             }
           }
@@ -70,7 +75,7 @@ const Packages = () => (
       <Wrapper>
         <Subtitle>Packages</Subtitle>
         <Grid>
-          {data.allMarkdownRemark.edges.map(edge => (
+          {data.allJavascriptFrontmatter.edges.map(edge => (
             <PackageLink key={edge.node.id} post={edge.node} />
           ))}
         </Grid>
