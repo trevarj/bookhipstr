@@ -14,7 +14,7 @@ export default function Splash({ src }) {
   return (
     <Wrapper>
       <iframe
-        title="Stop Being Average"
+        title="{src}"
         src={src}
         width="100%"
         height="100%"

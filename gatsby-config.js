@@ -20,13 +20,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `trusted`,
-        path: `${__dirname}/src/images/trusted`
-      }
-    },
-    {
       resolve: "gatsby-plugin-drift",
       options: {
         appId: "4zixb7fydtpw"
