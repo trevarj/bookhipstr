@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Text, Subtitle, Column, Row, Button } from "../theme/index";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import Slide from "react-reveal/Slide";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -50,6 +51,7 @@ const Div = styled.div`
 export default function Location() {
   return (
     <Wrapper>
+      {/* <Slide bottom> */}
       <Subtitle>Choose your location</Subtitle>
       <StyledRow justifycontent="space-evenly" width="100%" margin="4em 0">
         <StyledColumn width="35%" alignitems="center">
@@ -79,6 +81,7 @@ export default function Location() {
           />
         </Div>
       </StyledRow>
+      {/* </Slide> */}
     </Wrapper>
   );
 }

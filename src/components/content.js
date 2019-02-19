@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, Subtitle, Column } from "../theme/index";
 import styled from "styled-components";
+import Slide from "react-reveal/Slide";
 
 const ContentDiv = styled.div`
   width: 100%;
@@ -23,20 +24,15 @@ const StyledColumn = styled(Column)`
   }
 `;
 
-const Content = () => (
+const Content = ({ title, title2, text }) => (
   <ContentDiv>
     <StyledColumn>
-      <Subtitle>
-        Fun. Modern. Ridiculous.{" "}
-        <span style={{ color: "#ec7673" }}>
-          And here to guarantee a good time.
-        </span>
-      </Subtitle>
-      <Text>
-        Tired of tacky, under-developed and not-fun photo booths, we came up
-        with a better way to administer the fun. Read more on how we specialize
-        in delivering interactive photo & video activations across the USA.
-      </Text>
+      <Slide bottom>
+        <Subtitle>
+          {title} <span style={{ color: "#ec7673" }}>{title2}</span>
+        </Subtitle>
+        <Text>{text}</Text>
+      </Slide>
     </StyledColumn>
   </ContentDiv>
 );

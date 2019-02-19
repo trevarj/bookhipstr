@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
 import { Subtitle } from "../theme/index";
-import Img from "gatsby-image";
 
 const Wrapper = styled.div`
   width: 100%;

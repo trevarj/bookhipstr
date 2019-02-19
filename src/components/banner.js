@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Title } from "../theme/index";
+import Zoom from "react-reveal/Zoom";
 
 const Wrapper = styled.div`
   height: 200px;
@@ -14,7 +15,9 @@ const Wrapper = styled.div`
 export default function Banner({ title }) {
   return (
     <Wrapper>
-      <Title white>{title}</Title>
+      <Zoom bottom>
+        <Title white>{title}</Title>
+      </Zoom>
     </Wrapper>
   );
 }

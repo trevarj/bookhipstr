@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
+import Content from "../components/content";
 
 export default function Package({
   data // this prop will be injected by the GraphQL query below.
@@ -10,15 +11,12 @@ export default function Package({
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <Splash />
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h1>{frontmatter.image}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+      <Splash src={frontmatter.video} />
+      <Content title={frontmatter.title} text={frontmatter.subtitle} />
+      <div
+        className="blog-post-content"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   );
 }
@@ -30,7 +28,9 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        subtitle
         image
+        video
       }
     }
   }
