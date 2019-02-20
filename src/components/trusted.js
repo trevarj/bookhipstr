@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 100px;
+  grid-gap: 50px;
   width: 75%;
   margin: 1em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
@@ -30,11 +30,12 @@ function TrustedBy({ fluid }) {
 
   return (
     <Grid>
-      <Img fluid={fluid.image1.childImageSharp.fluid} />
+      <Img fluid={fluid.image6.childImageSharp.fluid} />
       <Img fluid={fluid.image2.childImageSharp.fluid} />
       <Img fluid={fluid.image3.childImageSharp.fluid} />
-      <Img fluid={fluid.image4.childImageSharp.fluid} />
       <Img fluid={fluid.image5.childImageSharp.fluid} />
+      <Img fluid={fluid.image4.childImageSharp.fluid} />
+      <Img fluid={fluid.image1.childImageSharp.fluid} />
     </Grid>
   );
 }
@@ -59,6 +60,9 @@ const Trusted = () => (
             ...logoImage
           }
           image5: file(relativePath: { eq: "trusted5.png" }) {
+            ...logoImage
+          }
+          image6: file(relativePath: { eq: "trusted6.png" }) {
             ...logoImage
           }
         }

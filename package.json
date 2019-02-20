@@ -25,6 +25,7 @@
     "react-dom": "^16.8.1",
     "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
+    "react-player": "^1.9.3",
     "react-reveal": "^1.2.2",
     "react-typography": "^0.16.18",
     "styled-components": "^4.1.3",

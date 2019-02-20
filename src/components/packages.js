@@ -6,7 +6,7 @@ import { Subtitle } from "../theme/index";
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 2em 0;
+  padding: 0 0 2em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +72,7 @@ const Packages = () => (
     `}
     render={data => (
       <Wrapper>
-        <Subtitle>Packages</Subtitle>
+        <Subtitle>Choose your package</Subtitle>
         <Grid>
           {data.allMarkdownRemark.edges.map(edge => (
             <PackageLink key={edge.node.id} post={edge.node} />
