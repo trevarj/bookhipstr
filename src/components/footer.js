@@ -1,15 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Row, Text } from "../theme/index";
+import { Row, Text, Column } from "../theme/index";
 import Logo from "./logowhite";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn
+} from "react-icons/fa";
 
 const Wrapper = styled.div`
   height: 200px;
   width: 100%;
   background: #2b2b2b;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 3em 0;
   @media (max-width: 780px) {
     height: 100%;
@@ -29,58 +34,54 @@ const StyledRow = styled(Row)`
   }
 `;
 
-const Icon = styled.i`
-  font-size: 2em;
-  margin-right: 0.75em;
-  color: #fff;
-  @media (max-width: 780px) {
-    margin: 0 0.5em;
-    font-size: 1.5em;
-  }
-`;
-
 export default function Footer() {
   return (
     <Wrapper>
-      <div style={{ width: 200, margin: "0 0 1em 3em" }}>
-        <Logo />
-      </div>
+      <Column>
+        <div style={{ width: 200, margin: "0 0 1em 3em" }}>
+          <Logo />
+        </div>
+        <StyledRow copy>
+          <Text white>
+            &copy; {new Date().getFullYear()} Hipstr | Made with &hearts; in New
+            York City
+          </Text>
+        </StyledRow>
+      </Column>
       <StyledRow>
-        <Row alignitems="center">
+        <Row alignitems="center" margin="0 2em 0 0">
           <a
             href="https://www.linkedin.com/showcase/creative114/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon className="fab fa-linkedin-in" />
+            <FaLinkedinIn
+              size="2em"
+              color="#fff"
+              style={{ margin: "0 .5em" }}
+            />
           </a>
           <a
             href="https://www.facebook.com/114brands"
             target="_blank"
             rel="noopener noreferrer"
           />
-
+          <FaFacebookF size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           <a
             href="https://www.instagram.com/candigitalgroup/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon className="fab fa-instagram" />
+            <FaInstagram size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           </a>
           <a
             href="https://vimeo.com/channels/1439000"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon className="fab fa-vimeo-v" />
+            <FaTwitter size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           </a>
         </Row>
-      </StyledRow>
-      <StyledRow copy>
-        <Text white>
-          &copy; {new Date().getFullYear()} Hipstr | Made with &hearts; in New
-          York City
-        </Text>
       </StyledRow>
     </Wrapper>
   );

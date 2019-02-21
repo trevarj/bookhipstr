@@ -12,7 +12,11 @@ export default function Package({
   return (
     <Layout>
       <Splash src={frontmatter.video} />
-      <Content title={frontmatter.title} text={frontmatter.subtitle} />
+      <Content
+        type="package"
+        title={frontmatter.title}
+        text={frontmatter.subtitle}
+      />
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}

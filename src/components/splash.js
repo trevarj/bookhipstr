@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 // import Logo from "./logo";
 // import { Text, Button } from "../theme/index";
-import ReactPlayer from "react-player";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -14,15 +13,12 @@ const Wrapper = styled.div`
 export default function Splash({ src }) {
   return (
     <Wrapper>
-      <ReactPlayer
+      <iframe
         title="{src}"
-        url={src}
+        src={src}
         width="100%"
         height="100%"
         allowFullScreen
-        playing
-        controls="false"
-        loop="true"
         style={{
           border: 0,
           width: "100%",

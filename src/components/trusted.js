@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Subtitle, Text, Column, Button } from "../theme/index";
 import { graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
@@ -23,11 +22,14 @@ const Grid = styled.div`
   margin: 1em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-auto-rows: auto;
+  @media (max-width: 720px) {
+    width: 95%;
+    margin: margin auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 function TrustedBy({ fluid }) {
-  console.log(fluid);
-
   return (
     <Grid>
       <Img fluid={fluid.image6.childImageSharp.fluid} />

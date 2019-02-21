@@ -18,15 +18,16 @@ const ContentDiv = styled.div`
 
 const StyledColumn = styled(Column)`
   width: 50%;
+  text-align: ${props => props.textalign};
   @media (max-width: 720px) {
     width: 95%;
     margin: 0 auto;
   }
 `;
 
-const Content = ({ title, title2, text }) => (
+const Content = ({ title, title2, text, type }) => (
   <ContentDiv>
-    <StyledColumn>
+    <StyledColumn textalign={type === "package" && "center"}>
       <Slide bottom>
         <Subtitle>
           {title} <span style={{ color: "#ec7673" }}>{title2}</span>
