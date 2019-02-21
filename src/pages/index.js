@@ -8,7 +8,8 @@ import Banner from "../components/banner";
 import Logos from "../components/logos";
 import Experience from "../components/experience";
 import Content from "../components/content";
-import Trusted from "../components/Trusted";
+import Trusted from "../components/trusted";
+import Testimonials from "../components/testimonials";
 
 const HomePage = () => (
   <Layout>
@@ -28,6 +29,7 @@ const HomePage = () => (
     <Banner title="TRUSTED BY GREAT COMPANIES AND GREAT PEOPLE" />
     <Trusted />
     <Logos />
+    <Testimonials />
   </Layout>
 );
 
