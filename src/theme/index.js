@@ -10,6 +10,8 @@ export const Title = styled.h2`
     props.white &&
     css`
       color: #fff;
+      font-size: 28px;
+      line-height: 1.4em;
     `}
 `;
 
@@ -77,7 +79,7 @@ export const Button = styled.button`
   height: 55px;
   width: 246px;
   color: #fff;
-  margin: 0.5em 0;
+  margin: 1em 0;
   transition: 500ms;
   &:hover {
     background-color: rgba(253, 111, 110, 0.8);

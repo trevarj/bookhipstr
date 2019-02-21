@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Title } from "../theme/index";
+import { Title, Column } from "../theme/index";
 import Zoom from "react-reveal/Zoom";
 
 const Wrapper = styled.div`
@@ -12,11 +12,19 @@ const Wrapper = styled.div`
   background: #375279;
 `;
 
+const StyledColumn = styled(Column)`
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+`;
+
 export default function Banner({ title }) {
   return (
     <Wrapper>
       <Zoom bottom>
-        <Title white>{title}</Title>
+        <StyledColumn>
+          <Title white>{title}</Title>
+        </StyledColumn>
       </Zoom>
     </Wrapper>
   );

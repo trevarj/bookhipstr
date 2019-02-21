@@ -4,7 +4,8 @@ date: "2017-11-07"
 title: "The One Ridiculous Photo Booth Package"
 subtitle: "Our all-inclusive package will be a guaranteed good time for your next event."
 image: "https://i.postimg.cc/SsG4Hgss/oneHome.png"
-video: "https://player.vimeo.com/video/254001359?background=1"
+video: "https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
+tagline: "Weddings, Birthdays, Mitzvahs, Sweet 16s, Anniversaries, Engagements – you name it, we’ll celebrate it with you! We guarantee a good time, every time."
 ---
 
 The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.

@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
 import Content from "../components/content";
+import Banner from "../components/banner";
+import Testimonials from "../components/testimonials";
 
 export default function Package({
   data // this prop will be injected by the GraphQL query below.
@@ -21,6 +23,8 @@ export default function Package({
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      <Testimonials />
+      <Banner title={frontmatter.tagline} />
     </Layout>
   );
 }
@@ -35,6 +39,7 @@ export const pageQuery = graphql`
         subtitle
         image
         video
+        tagline
       }
     }
   }
