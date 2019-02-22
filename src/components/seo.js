@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import favicon96 from "../images/icon-96x96.png";
+import favicon72 from "../images/icon-72x72.png";
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -51,6 +53,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription
               }
             ]
+
               .concat(
                 keywords.length > 0
                   ? {
@@ -60,6 +63,20 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
+            link={[
+              {
+                rel: "shortcut icon",
+                type: "image/png",
+                sizes: "96x96",
+                href: `${favicon96}`
+              },
+              {
+                rel: "shortcut icon",
+                type: "image/png",
+                sizes: "72x72",
+                href: `${favicon72}`
+              }
+            ]}
           />
         );
       }}

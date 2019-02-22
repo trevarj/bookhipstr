@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-drift",
       options: {
-        appId: "4zixb7fydtpw"
+        appId: "h39e7gnm2pz5"
       }
     },
     `gatsby-transformer-javascript-frontmatter`,

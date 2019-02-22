@@ -20,6 +20,9 @@ const StyledColumn = styled(Column)`
   margin: 0 auto;
   text-align: center;
   align-items: center;
+  @media (max-width: 500px) {
+    width: 95%;
+  }
 `;
 
 export default class Testimonial extends Component {

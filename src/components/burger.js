@@ -28,13 +28,6 @@ const StyledLi = styled.li`
   list-style: none;
 `;
 
-const StyledA = styled.a`
-  margin: 1.5em 0;
-  font-size: 1.4em;
-  font-family: "Intro Book", sans-serif;
-  list-style: none;
-`;
-
 function BurgerMenu({ close }) {
   return (
     <div className="menu">

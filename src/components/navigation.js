@@ -57,6 +57,13 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledRow = styled(Row)`
+  margin: 0 2em 0 0;
+  @media (max-width: 920px) {
+    margin: 0;
+  }
+`;
+
 class Navigation extends Component {
   state = {
     active: false
@@ -76,8 +83,8 @@ class Navigation extends Component {
 
   render() {
     const { active } = this.state;
-    const mobile = window.matchMedia("(max-width: 920px)");
-    let handleChange = () => {};
+    const mobile =
+      typeof window !== "undefined" && window.matchMedia("(max-width: 920px)");
 
     return (
       <Header active={active}>
@@ -86,17 +93,21 @@ class Navigation extends Component {
             <Logo />
           </div>
         </Link>
-        {mobile.matches && <Burger />}
+        {mobile.matches && (
+          <div style={{ margin: 0 }}>
+            <Burger />
+          </div>
+        )}
         {!mobile.matches && (
-          <Row margin="0 2em 0 0">
+          <StyledRow>
             <a href="https://gallery.bookhipstr.com/browse">
               <Text>Gallery</Text>
             </a>
             <a href="tel:8442665447">
               <Text bold>844.266.5447</Text>
             </a>
-            <StyledLink to="booknow">Book Now</StyledLink>
-          </Row>
+            <StyledLink to="book-now">Book Now</StyledLink>
+          </StyledRow>
         )}
       </Header>
     );

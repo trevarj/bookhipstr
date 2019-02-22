@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
-import { Subtitle } from "../theme/index";
+import { Subtitle, Text } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -13,8 +13,8 @@ const Wrapper = styled.div`
 `;
 
 const PackageBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   border: 1.5px solid transparent;
   background: ${props => props.background};
   object-fit: contain;
@@ -32,20 +32,33 @@ const PackageBox = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 50px;
-  width: 80%;
+  grid-gap: 25px 50px;
+  width: 75%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 400px;
   @media (max-width: 720px) {
-    grid-auto-rows: 375px;
+    grid-auto-rows: auto;
+    width: 100%;
   }
 `;
 
 const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
-      <PackageBox background={`url('${post.frontmatter.image}')`} />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          margin: ".5em auto"
+        }}
+      >
+        <PackageBox background={`url('${post.frontmatter.image}')`} />
+        <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
+          <Text>{post.frontmatter.excerpt}</Text>
+        </div>
+      </div>
     </Link>
   );
 };
@@ -64,6 +77,7 @@ const Packages = () => (
                 path
                 title
                 image
+                excerpt
               }
             }
           }

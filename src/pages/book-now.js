@@ -8,7 +8,6 @@ import styled from "styled-components";
 const Div = styled.div`
   width: 100%;
   height: 100%;
-  margin-bottom: 2em;
 `;
 
 function Form() {
@@ -25,7 +24,8 @@ function Form() {
         style={{
           width: "10px",
           minWidth: "100%",
-          height: "1628px",
+          height: "100%",
+          minHeight: "1900px",
           border: "none"
         }}
         scrolling="no"
@@ -49,7 +49,11 @@ const BookNow = () => (
       specialize in delivering interactive photo & video activations across
       the USA."
     />
-    <Form />
+    <div
+      style={{ margin: "0 auto", display: "flex", justifyContent: "center" }}
+    >
+      <Form />
+    </div>
   </Layout>
 );
 
