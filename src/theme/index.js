@@ -6,12 +6,16 @@ export const Title = styled.h2`
   margin: 0;
   font-family: "Intro Black", sans-serif;
   color: ${props => (props.pink ? "#ec7673" : "#2b2b2b")};
+
   ${props =>
     props.white &&
     css`
       color: #fff;
       font-size: 28px;
-      line-height: 1.4em;
+      line-height: 2em;
+      @media (max-width: 500px) {
+        font-size: 22px;
+      }
     `}
 `;
 
@@ -21,6 +25,9 @@ export const Subtitle = styled.h3`
   font-family: "Intro Black", sans-serif;
   line-height: 1.4em;
   color: ${props => (props.pink ? "#ec7673" : "#2b2b2b")};
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
 `;
 
 export const Text = styled.p`
@@ -43,6 +50,9 @@ export const Text = styled.p`
       font-weight: 800;
       font-size: 26px;
       font-family: "Intro Black", sans-serif;
+      @media (max-width: 500px) {
+        font-size: 22px;
+      }
     `};
 `;
 

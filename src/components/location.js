@@ -25,6 +25,7 @@ const StyledRow = styled(Row)`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin: 2em auto;
   }
 `;
 
@@ -53,7 +54,7 @@ export default function Location() {
     <Wrapper>
       {/* <Slide bottom> */}
       <Subtitle>Choose your location</Subtitle>
-      <StyledRow justifycontent="space-evenly" width="100%" margin="4em 0">
+      <StyledRow>
         <StyledColumn width="35%" alignitems="center">
           <Text large blue>
             AZ, CA, CO, CT, D.C., DE, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN,

@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Title, Column, Text, Button } from "../theme/index";
 import Zoom from "react-reveal/Zoom";
-import { FaRegStar, FaAward, FaTrophy, FaSmileBeam } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const Wrapper = styled.div`
-  height: 400px;
+  min-height: 400px;
+  height: 100%;
+  padding: 2em 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -57,7 +59,7 @@ export default class Testimonial extends Component {
         <Zoom bottom>
           <StyledColumn>
             <FaRegStar
-              size="4em"
+              size="3em"
               color="#375279"
               style={{ margin: " 0 0 1.5em 0" }}
             />

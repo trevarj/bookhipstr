@@ -4,7 +4,9 @@ import { Title, Column } from "../theme/index";
 import Zoom from "react-reveal/Zoom";
 
 const Wrapper = styled.div`
-  height: 200px;
+  min-height: 200px;
+  height: 100%;
+  padding: 1em 0;
   width: 100%;
   display: flex;
   align-items: center;

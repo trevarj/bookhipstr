@@ -8,6 +8,9 @@ const Wrapper = styled.div`
   height: auto;
   position: relative;
   padding-bottom: 56.75%;
+  @media (max-width: 720px) {
+    padding-bottom: 100%;
+  }
 `;
 
 export default function Splash({ src }) {

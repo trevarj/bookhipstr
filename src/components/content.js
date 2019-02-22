@@ -13,6 +13,7 @@ const ContentDiv = styled.div`
   @media (max-width: 720px) {
     padding: 3em 0;
     margin: 0 auto;
+    text-align: center;
   }
 `;
 

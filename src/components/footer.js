@@ -20,6 +20,9 @@ const Wrapper = styled.div`
     height: 100%;
     min-height: 100px;
     padding: 6em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -34,13 +37,29 @@ const StyledRow = styled(Row)`
   }
 `;
 
+const StyledLogoRow = styled(Row)`
+  margin: 0 2em 0 0;
+  align-items: center;
+  @media (max-width: 780px) {
+    margin: 1em auto;
+  }
+`;
+
+const Div = styled.div`
+  width: 200px;
+  margin: 0 0 1em 3em;
+  @media (max-width: 780px) {
+    margin: 1em auto;
+  }
+`;
+
 export default function Footer() {
   return (
     <Wrapper>
       <Column>
-        <div style={{ width: 200, margin: "0 0 1em 3em" }}>
+        <Div>
           <Logo />
-        </div>
+        </Div>
         <StyledRow copy>
           <Text white>
             &copy; {new Date().getFullYear()} Hipstr | Made with &hearts; in New
@@ -49,9 +68,9 @@ export default function Footer() {
         </StyledRow>
       </Column>
       <StyledRow>
-        <Row alignitems="center" margin="0 2em 0 0">
+        <StyledLogoRow alignitems="center" margin="0 2em 0 0">
           <a
-            href="https://www.linkedin.com/showcase/creative114/"
+            href="https://www.linkedin.com/company/hipstr-photo-booth/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,26 +81,26 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.facebook.com/114brands"
+            href="https://www.facebook.com/hipstrphotobooth/"
             target="_blank"
             rel="noopener noreferrer"
           />
           <FaFacebookF size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           <a
-            href="https://www.instagram.com/candigitalgroup/"
+            href="https://www.instagram.com/bookhipstr/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           </a>
           <a
-            href="https://vimeo.com/channels/1439000"
+            href="https://twitter.com/bookhipstr?lang=en"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaTwitter size="2em" color="#fff" style={{ margin: "0 .5em" }} />
           </a>
-        </Row>
+        </StyledLogoRow>
       </StyledRow>
     </Wrapper>
   );

@@ -8,7 +8,7 @@ video: "https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&por
 tagline: "Weddings, Birthdays, Mitzvahs, Sweet 16s, Anniversaries, Engagements – you name it, we’ll celebrate it with you! We guarantee a good time, every time."
 ---
 
-The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.
+### The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.
 
 You’re about to get all the things.
 
@@ -24,4 +24,4 @@ Highlights include:
 - On-Site Social Sharing
 - Up to 6 hours of pure event time
 
-We know – it’s ridiculous. Complete the form to see how we can take your upcoming event to the next level!
+### We know – it’s ridiculous. Complete the form to see how we can take your upcoming event to the next level!

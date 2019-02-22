@@ -37,6 +37,7 @@ const StyledColumn = styled(Column)`
   text-align: center;
   @media (max-width: 780px) {
     width: 95%;
+    margin: 0 auto;
   }
 `;
 

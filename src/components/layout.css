@@ -19,6 +19,88 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/*BURGR ICON*/
+
+.burger-menu,
+.burger-menu.open {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999;
+  padding: 1em;
+  margin-top: 0.7em;
+}
+
+.burger-menu .bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #375279;
+  border-radius: 5px;
+  margin: 0.25em 0;
+  transition: 0.4s;
+}
+
+.burger-menu.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.burger-menu.open .bar2 {
+  opacity: 0;
+}
+
+.burger-menu.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.package > h1 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Intro Book", sans-serif;
+  margin: 0;
+  line-height: 2em;
+  color: #2b2b2b;
+}
+
+.package > h2 {
+  font-size: 20px;
+  color: #375279;
+  font-weight: 800;
+  font-family: "Intro Book", sans-serif;
+  margin: 0;
+  line-height: 2em;
+}
+
+.package > h3 {
+  font-size: 20px;
+  color: #375279;
+  font-weight: 800;
+  font-family: "Intro Book", sans-serif;
+  margin: 0;
+  line-height: 2em;
+}
+
+.package > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Intro Book", sans-serif;
+  margin: 0;
+  line-height: 2em;
+  color: #2b2b2b;
+}
+
+.package li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Intro Book", sans-serif;
+  margin: 0;
+  line-height: 2em;
+  color: #2b2b2b;
+}
+
 body {
   margin: 0;
 }
