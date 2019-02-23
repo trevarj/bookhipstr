@@ -5,6 +5,7 @@ import experience1 from "../images/experience1.jpg";
 import experience2 from "../images/experience2.jpg";
 import experience3 from "../images/experience3.jpg";
 import experience4 from "../images/experience4.jpg";
+import { Link } from "gatsby";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -103,7 +104,9 @@ const Experiences = () => (
         />
       ))}
     </Grid>
-    <Button>Book now</Button>
+    <Link to="/book-now">
+      <Button>Book now</Button>
+    </Link>
   </Wrapper>
 );
 

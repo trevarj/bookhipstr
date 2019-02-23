@@ -43,12 +43,12 @@ function Form({ src }) {
     <Div>
       <iframe
         id="JotFormIFrame-80186446884165"
-        onload="window.parent.scrollTo(0,0)"
+        onLoad={window.parent.scrollTo(0, 0)}
         allowtransparency="true"
-        allowfullscreen="true"
+        allowFullScreen
         allow="geolocation; microphone; camera"
         src="https://form.jotform.com/81706122684153"
-        frameborder="0"
+        frameBorder="0"
         style={{
           width: "10px",
           minWidth: "100%",
@@ -64,13 +64,15 @@ function Form({ src }) {
 export default function Package({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+  console.log(frontmatter.splash);
+
   return (
     <Layout>
       <SEO
         title={frontmatter.title}
         keywords={[`photobooth`, `newyork`, `events`, `party`]}
       />
-      <Splash src={frontmatter.video} />
+      <Splash type={frontmatter.type} src={frontmatter.splash} />
       <Content
         type="package"
         title={frontmatter.title}
@@ -98,8 +100,15 @@ export const pageQuery = graphql`
         title
         subtitle
         image
-        video
         tagline
+        type
+        splash {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -4,6 +4,7 @@ import { Text, Subtitle, Column, Row, Button } from "../theme/index";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Slide from "react-reveal/Slide";
+import { Link } from "gatsby";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -52,37 +53,39 @@ const Div = styled.div`
 export default function Location() {
   return (
     <Wrapper>
-      {/* <Slide bottom> */}
-      <Subtitle>Choose your location</Subtitle>
-      <StyledRow>
-        <StyledColumn width="35%" alignitems="center">
-          <Text large blue>
-            AZ, CA, CO, CT, D.C., DE, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN,
-            MO, NV, NJ, NY, NC, OH, OR, PA, RI, SC, TN, TX, VA, WA, WI, & WV
-          </Text>
-          <Text large>Don't see your location?</Text>
-          <Button>Get in touch</Button>
-        </StyledColumn>
-        <Div>
-          <StaticQuery
-            query={graphql`
-              query {
-                placeholderImage: file(relativePath: { eq: "location.png" }) {
-                  childImageSharp {
-                    fluid(maxWidth: 300) {
-                      ...GatsbyImageSharpFluid
+      <Slide bottom>
+        <Subtitle>Choose your location</Subtitle>
+        <StyledRow>
+          <StyledColumn width="35%" alignitems="center">
+            <Text large blue>
+              AZ, CA, CO, CT, D.C., DE, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN,
+              MO, NV, NJ, NY, NC, OH, OR, PA, RI, SC, TN, TX, VA, WA, WI, & WV
+            </Text>
+            <Text large>Don't see your location?</Text>
+            <Link to="/book-now">
+              <Button>Book now</Button>
+            </Link>
+          </StyledColumn>
+          <Div>
+            <StaticQuery
+              query={graphql`
+                query {
+                  placeholderImage: file(relativePath: { eq: "location.png" }) {
+                    childImageSharp {
+                      fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
+                      }
                     }
                   }
                 }
-              }
-            `}
-            render={data => (
-              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-            )}
-          />
-        </Div>
-      </StyledRow>
-      {/* </Slide> */}
+              `}
+              render={data => (
+                <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+              )}
+            />
+          </Div>
+        </StyledRow>
+      </Slide>
     </Wrapper>
   );
 }

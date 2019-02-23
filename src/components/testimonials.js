@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Title, Column, Text, Button } from "../theme/index";
+import { Column, Text, Button } from "../theme/index";
 import Zoom from "react-reveal/Zoom";
 import { FaRegStar } from "react-icons/fa";
+import { Link } from "gatsby";
 
 const Wrapper = styled.div`
   min-height: 400px;
@@ -69,7 +70,9 @@ export default class Testimonial extends Component {
             <Text large blue>
               {testimonial}
             </Text>
-            <Button>Book now</Button>
+            <Link to="/book-now">
+              <Button>Book now</Button>
+            </Link>
           </StyledColumn>
         </Zoom>
       </Wrapper>

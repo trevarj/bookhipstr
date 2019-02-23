@@ -56,7 +56,7 @@ const PackageLink = ({ post }) => {
       >
         <PackageBox background={`url('${post.frontmatter.image}')`} />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
-          <Text>{post.frontmatter.excerpt}</Text>
+          <Text bold>{post.frontmatter.excerpt}</Text>
         </div>
       </div>
     </Link>
