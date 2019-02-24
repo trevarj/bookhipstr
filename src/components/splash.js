@@ -7,40 +7,57 @@ import Img from "gatsby-image";
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 100vh;
-  background: ${props => props.background};
   @media (max-width: 720px) {
-    padding-bottom: 100%;
+    min-height: 100%;
   }
 `;
 
+const VideoWrapper = styled.div`
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+`;
+
 const StyledImg = styled(Img)`
-  max-height: 900px;
+  height: 700px;
+  @media (max-width: 720px) {
+    min-height: 500px;
+  }
+`;
+
+const Div = styled.div`
+  height: 85px;
+  @media (max-width: 720px) {
+    height: 85px;
+  }
 `;
 
 export default function Splash({ src, type }) {
-  console.log(src);
-
   return (
-    <Wrapper>
-      {type === "image" && <StyledImg fluid={src.childImageSharp.fluid} />}
-      {type !== "image" && (
-        <iframe
-          title={src}
-          src={src}
-          width="100%"
-          height="100%"
-          allowFullScreen
-          style={{
-            border: 0,
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0
-          }}
-        />
+    <div style={{ width: "100%", height: "100%" }}>
+      <Div />
+      {type === "image" && (
+        <Wrapper>
+          <StyledImg fluid={src.childImageSharp.fluid} />
+        </Wrapper>
       )}
-    </Wrapper>
+      {type !== "image" && (
+        <VideoWrapper>
+          <iframe
+            title={src}
+            src={src}
+            allowFullScreen
+            style={{
+              border: 0,
+              width: "100%",
+              height: "100%",
+              position: "absolute",
+              top: 0,
+              left: 0
+            }}
+          />
+        </VideoWrapper>
+      )}
+    </div>
   );
 }

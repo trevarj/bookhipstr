@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import styled from "styled-components";
 import Logo from "./logo";
-import { Text, Button } from "../theme/index";
+import { Text } from "../theme/index";
 import Burger from "./burger";
 
 const Header = styled.header`
@@ -17,7 +17,7 @@ const Header = styled.header`
   top: 0;
   z-index: 1000;
   transition: 500ms;
-  box-shadow: ${props => props.active && "0 0 10px rgba(0, 0, 0, 0.1)"};
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
 const Row = styled.div`
@@ -65,29 +65,28 @@ const StyledRow = styled(Row)`
 `;
 
 class Navigation extends Component {
-  state = {
-    active: false
-  };
+  // state = {
+  //   active: false
+  // };
 
-  listenScrollEvent = e => {
-    if (window.scrollY > 150) {
-      this.setState({ active: true });
-    } else {
-      this.setState({ active: false });
-    }
-  };
+  // listenScrollEvent = e => {
+  //   if (window.scrollY > 150) {
+  //     this.setState({ active: true });
+  //   } else {
+  //     this.setState({ active: false });
+  //   }
+  // };
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.listenScrollEvent);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.listenScrollEvent);
+  // }
 
   render() {
-    const { active } = this.state;
     const mobile =
       typeof window !== "undefined" && window.matchMedia("(max-width: 920px)");
 
     return (
-      <Header active={active}>
+      <Header>
         <Link to="/">
           <div style={{ width: 200, margin: "0 0 0 2em" }}>
             <Logo />

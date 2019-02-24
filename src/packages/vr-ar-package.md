@@ -9,3 +9,5 @@ excerpt: "The most immersive Hipstr activation ever. INTEGRATE & REPEAT."
 type: "image"
 subtitle: "With virtually endless possibilities, we'll create a completely custom experience centered around your brand. Use your brand to fuse together the digital and physical world or put your audience in the center of it all."
 ---
+
+<img src="../images/vrGrid.jpg">
