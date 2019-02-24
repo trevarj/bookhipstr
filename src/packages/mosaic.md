@@ -1,5 +1,5 @@
 ---
-path: "/packages/mosaic"
+path: /packages/mosaic
 date: "2017-11-07"
 title: "Mosaic"
 image: "https://i.postimg.cc/W4W6Svmb/mosaichome1-1.png"

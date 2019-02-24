@@ -106,7 +106,7 @@ class Navigation extends Component {
             <a href="tel:8442665447">
               <Text bold>844.266.5447</Text>
             </a>
-            <StyledLink to="book-now">Book Now</StyledLink>
+            <StyledLink to="/book-now">Book Now</StyledLink>
           </StyledRow>
         )}
       </Header>

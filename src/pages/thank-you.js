@@ -10,7 +10,7 @@ const ThankYou = () => (
       title="Thank you"
       keywords={[`photobooth`, `newyork`, `events`, `party`]}
     />
-    <Splash src="https://player.vimeo.com/video/254001359?background=1" />
+
     <Content
       title="Thank"
       title2="You!"

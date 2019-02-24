@@ -40,7 +40,7 @@ const BookNow = () => (
       title="Book Now"
       keywords={[`photobooth`, `newyork`, `events`, `party`]}
     />
-    <Splash src="https://player.vimeo.com/video/254001359?background=1" />
+
     <Content
       title="Fun. Modern. Ridiculous."
       title2="And here to guarantee a good time."

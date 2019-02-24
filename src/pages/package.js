@@ -38,12 +38,12 @@ const Div = styled.div`
   margin-bottom: 2em;
 `;
 
-function Form({ src }) {
+function Form() {
   return (
     <Div>
       <iframe
         id="JotFormIFrame-80186446884165"
-        onLoad={window.parent.scrollTo(0, 0)}
+        onLoad={typeof window !== "undefined" && window.parent.scrollTo(0, 0)}
         allowtransparency="true"
         allowFullScreen
         allow="geolocation; microphone; camera"
@@ -64,8 +64,6 @@ function Form({ src }) {
 export default function Package({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  console.log(frontmatter.splash);
-
   return (
     <Layout>
       <SEO
@@ -76,7 +74,7 @@ export default function Package({ data }) {
       <Content
         type="package"
         title={frontmatter.title}
-        text={frontmatter.subtitle}
+        text={frontmatter.tagline}
       />
       <Grid>
         <Information
@@ -98,7 +96,6 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        subtitle
         image
         tagline
         type
