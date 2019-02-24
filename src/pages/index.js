@@ -10,9 +10,14 @@ import Experience from "../components/experience";
 import Content from "../components/content";
 import Trusted from "../components/trusted";
 import Testimonials from "../components/testimonials";
+import Helmet from "react-helmet";
+import favicon from "../images/icon-72x72.png";
 
 const HomePage = () => (
   <Layout>
+    <Helmet
+      link={{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }}
+    />
     <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
     <Splash
       type="video"

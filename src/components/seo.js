@@ -17,6 +17,20 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang
             }}
+            link={[
+              {
+                rel: "shortcut icon",
+                type: "image/png",
+                sizes: "96x96",
+                href: `${favicon96}`
+              },
+              {
+                rel: "shortcut icon",
+                type: "image/png",
+                sizes: "72x72",
+                href: `${favicon72}`
+              }
+            ]}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
@@ -63,20 +77,6 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-            link={[
-              {
-                rel: "shortcut icon",
-                type: "image/png",
-                sizes: "96x96",
-                href: `${favicon96}`
-              },
-              {
-                rel: "shortcut icon",
-                type: "image/png",
-                sizes: "72x72",
-                href: `${favicon72}`
-              }
-            ]}
           />
         );
       }}
