@@ -26,7 +26,7 @@ export default function Splash({ src, type }) {
       {type === "image" && <StyledImg fluid={src.childImageSharp.fluid} />}
       {type !== "image" && (
         <iframe
-          title="{src}"
+          title={src}
           src={src}
           width="100%"
           height="100%"

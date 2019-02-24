@@ -74,7 +74,7 @@ export default function Package({ data }) {
       <Content
         type="package"
         title={frontmatter.title}
-        text={frontmatter.tagline}
+        text={frontmatter.subtitle}
       />
       <Grid>
         <Information
@@ -99,6 +99,7 @@ export const pageQuery = graphql`
         image
         tagline
         type
+        subtitle
         splash {
           childImageSharp {
             fluid(maxWidth: 1200, quality: 100) {

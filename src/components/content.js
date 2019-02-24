@@ -31,7 +31,7 @@ const Content = ({ title, title2, text, type }) => (
     <StyledColumn textalign={type === "package" && "center"}>
       <Slide bottom>
         <Subtitle>
-          {title} <span style={{ color: "#ec7673" }}>{title2}</span>
+          <span style={{ color: "#ec7673" }}>{title}</span> {title2}
         </Subtitle>
         <Text>{text}</Text>
       </Slide>
