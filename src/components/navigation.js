@@ -59,8 +59,18 @@ const StyledLink = styled(Link)`
 
 const StyledRow = styled(Row)`
   margin: 0 2em 0 0;
+  display: flex;
   @media (max-width: 920px) {
     margin: 0;
+    display: none;
+  }
+`;
+
+const Div = styled.div`
+  margin: 0;
+  display: none;
+  @media (max-width: 920px) {
+    display: block;
   }
 `;
 
@@ -92,22 +102,20 @@ class Navigation extends Component {
             <Logo />
           </div>
         </Link>
-        {mobile.matches && (
-          <div style={{ margin: 0 }}>
-            <Burger />
-          </div>
-        )}
-        {!mobile.matches && (
-          <StyledRow>
-            <a href="https://gallery.bookhipstr.com/browse">
-              <Text>Gallery</Text>
-            </a>
-            <a href="tel:8442665447">
-              <Text bold>844.266.5447</Text>
-            </a>
-            <StyledLink to="/book-now">Book Now</StyledLink>
-          </StyledRow>
-        )}
+
+        <Div>
+          <Burger />
+        </Div>
+
+        <StyledRow>
+          <a href="https://gallery.bookhipstr.com/browse">
+            <Text>Gallery</Text>
+          </a>
+          <a href="tel:8442665447">
+            <Text bold>844.266.5447</Text>
+          </a>
+          <StyledLink to="/book-now">Book Now</StyledLink>
+        </StyledRow>
       </Header>
     );
   }
