@@ -12,6 +12,13 @@ import Trusted from "../components/trusted";
 import Testimonials from "../components/testimonials";
 import Helmet from "react-helmet";
 import favicon from "../images/icon-72x72.png";
+import styled from "styled-components";
+
+const Div = styled.div`
+  height: 35px;
+  width: 100%;
+  background: #000;
+`;
 
 const HomePage = () => (
   <Layout>
@@ -32,12 +39,14 @@ const HomePage = () => (
       the USA."
     />
     <Packages />
+    <Div />
     <Location />
     <Experience />
     <Banner title="TRUSTED BY GREAT COMPANIES AND GREAT PEOPLE" />
     <Trusted />
     <Logos />
     <Testimonials />
+    <Banner type="bottomCta" />
   </Layout>
 );
 

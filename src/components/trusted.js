@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #eaeaea;
   @media (max-width: 720px) {
     text-align: center;
   }
@@ -17,8 +18,8 @@ const Wrapper = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 50px;
-  width: 75%;
+  grid-gap: 25px;
+  width: 65%;
   margin: 1em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-auto-rows: auto;
@@ -79,7 +80,7 @@ export default Trusted;
 export const logoImage = graphql`
   fragment logoImage on File {
     childImageSharp {
-      fluid(maxWidth: 200, maxHeight: 200) {
+      fluid(maxWidth: 125, maxHeight: 125) {
         ...GatsbyImageSharpFluid
       }
     }

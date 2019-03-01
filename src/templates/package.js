@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
-import Content from "../components/content";
-import Banner from "../components/banner";
+// import Content from "../components/content";
+import PackageBanner from "../components/packagebanner";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
 
@@ -13,11 +13,12 @@ const Grid = styled.div`
   grid-gap: 50px;
   width: 80%;
   margin: 1em auto 0 auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 720px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+    width: 95%;
   }
 `;
 
@@ -27,9 +28,6 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 720px) {
-    align-items: center;
-  }
 `;
 
 const Div = styled.div`
@@ -70,12 +68,17 @@ export default function Package({ data }) {
         title={frontmatter.title}
         keywords={[`photobooth`, `newyork`, `events`, `party`]}
       />
-      <Splash type={frontmatter.type} src={frontmatter.splash} />
-      <Content
-        type="package"
+      <Splash
+        type={frontmatter.type}
+        src={frontmatter.splash}
         title={frontmatter.title}
         text={frontmatter.subtitle}
       />
+      {/* <Content
+        type="package"
+        title={frontmatter.title}
+        text={frontmatter.subtitle}
+      /> */}
       <Grid>
         <Information
           className="package"
@@ -83,8 +86,8 @@ export default function Package({ data }) {
         />
         <Form />
       </Grid>
+      <PackageBanner title={frontmatter.tagline} />
       <Testimonials />
-      <Banner title={frontmatter.tagline} />
     </Layout>
   );
 }
