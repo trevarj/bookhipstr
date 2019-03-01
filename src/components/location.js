@@ -46,7 +46,7 @@ const Div = styled.div`
   text-align: center;
   @media (max-width: 720px) {
     width: 95%;
-    margin: 4em 0 2em 0;
+    margin: 4em 0;
     height: 175px;
   }
 `;
@@ -57,7 +57,7 @@ export default function Location() {
       <Slide bottom>
         <Subtitle>Choose your location</Subtitle>
         <StyledRow>
-          <StyledColumn width="35%" alignitems="center">
+          <StyledColumn>
             <Text large blue location>
               AZ, CA, CO, CT, D.C., DE, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN,
               MO, NV, NJ, NY, NC, OH, OR, PA, RI, SC, TN, TX, VA, WA, WI, & WV

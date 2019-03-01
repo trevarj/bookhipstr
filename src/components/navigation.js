@@ -8,7 +8,7 @@ import Burger from "./burger";
 
 const Header = styled.header`
   width: 100%;
-  height: 95px;
+  height: 85px;
   background: #fff;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ const Header = styled.header`
 
 const StyledLink = styled(Link)`
   height: 100%;
-  width: 135px;
+  width: 125px;
   border-radius: 0;
   color: #fff;
   margin: 1em 0;

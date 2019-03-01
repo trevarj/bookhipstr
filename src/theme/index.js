@@ -20,7 +20,7 @@ export const Title = styled.h2`
 `;
 
 export const Subtitle = styled.h3`
-  font-size: 32px;
+  font-size: ${props => (props.large ? "32px" : "26px")};
   font-weight: 700;
   font-family: "Poppins Bold", sans-serif;
   line-height: 1.4em;
@@ -28,6 +28,13 @@ export const Subtitle = styled.h3`
   text-transform: ${props => props.transform || "uppercase"};
   color: ${props =>
     props.pink ? "#ec7673" : props.white ? "#fff" : "#2b2b2b"};
+  ${props =>
+    props.testimonial &&
+    css`
+      font-size: 29px;
+      color: #fff;
+      line-height: 51px;
+    `};
   @media (max-width: 500px) {
     font-size: 28px;
   }

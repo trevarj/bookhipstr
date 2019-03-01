@@ -11,17 +11,16 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background: #eaeaea;
+  text-align: center;
 `;
 
 const PackageImage = styled.img`
   width: 300px;
   height: 300px;
-  border: 1.5px solid transparent;
   background: ${props => props.background};
   object-fit: contain;
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
 `;
 
 const Grid = styled.div`
@@ -33,7 +32,7 @@ const Grid = styled.div`
   grid-auto-rows: auto;
   @media (max-width: 720px) {
     grid-auto-rows: auto;
-    width: 100%;
+    width: 85%;
   }
 `;
 
@@ -41,17 +40,14 @@ const PackageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 1.5em 1em;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   background: #fff;
   border: 1.5px solid transparent;
-  border-radius: 4px;
   transition: 1s;
   &:hover {
-    // border: 1.5px solid rgba(253, 111, 110, 0.9);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -61,7 +57,7 @@ const PackageLink = ({ post }) => {
       <PackageWrapper>
         <PackageImage src={post.frontmatter.image} />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
-          <Text bold>{post.frontmatter.excerpt}</Text>
+          <Text>{post.frontmatter.excerpt}</Text>
         </div>
       </PackageWrapper>
     </Link>

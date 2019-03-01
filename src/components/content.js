@@ -12,11 +12,13 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   padding: 2em 0;
-  background: #2b2b2b;
+  background: #000;
   @media (max-width: 720px) {
     padding: 3em 0;
     margin: 0 auto;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 

@@ -82,7 +82,7 @@ function Experience({ image, title, description }) {
     <StyledExperience>
       <Image src={image} />
       <Column width="85%" alignitems="center">
-        <Text large black>
+        <Text uppercase large black>
           {title}
         </Text>
         <Text>{description}</Text>
