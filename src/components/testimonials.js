@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Column, Text, Button } from "../theme/index";
 import Zoom from "react-reveal/Zoom";
-import { FaRegStar } from "react-icons/fa";
 import { Link } from "gatsby";
 
 const Wrapper = styled.div`
@@ -13,7 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#fff, #f7f7f7 85%);
+  background: #2b2b2b;
 `;
 
 const StyledColumn = styled(Column)`
@@ -62,14 +61,7 @@ export default class Testimonial extends Component {
       <Wrapper>
         <Zoom bottom>
           <StyledColumn>
-            <FaRegStar
-              size="3em"
-              color="#375279"
-              style={{ margin: " 0 0 1.5em 0" }}
-            />
-            <Text large blue>
-              {testimonial}
-            </Text>
+            <Text white>{testimonial}</Text>
             <Link to="/book-now">
               <Button>Book now</Button>
             </Link>

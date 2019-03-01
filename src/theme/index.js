@@ -4,7 +4,7 @@ export const Title = styled.h2`
   font-size: 48px;
   font-weight: 600;
   margin: 0;
-  font-family: "Intro Black", sans-serif;
+  font-family: "Poppins Bold", sans-serif;
   color: ${props => (props.pink ? "#ec7673" : "#2b2b2b")};
 
   ${props =>
@@ -20,39 +20,59 @@ export const Title = styled.h2`
 `;
 
 export const Subtitle = styled.h3`
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 700;
-  font-family: "Intro Black", sans-serif;
+  font-family: "Poppins Bold", sans-serif;
   line-height: 1.4em;
-  color: ${props => (props.pink ? "#ec7673" : "#2b2b2b")};
+  margin: ${props => props.margin || "0.5em 0"};
+  text-transform: ${props => props.transform || "uppercase"};
+  color: ${props =>
+    props.pink ? "#ec7673" : props.white ? "#fff" : "#2b2b2b"};
   @media (max-width: 500px) {
     font-size: 28px;
   }
 `;
 
 export const Text = styled.p`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  font-family: "Intro Book", sans-serif;
-  color: ${props => (props.white ? "#fff" : "#2b2b2b")};
+  font-family: "Poppins Regular", sans-serif;
+  color: ${props => (props.white ? "#fff" : "#000")};
   margin: 0;
-  line-height: 2em;
+  line-height: 26px;
+  letter-spacing: 1px;
   ${props =>
     props.bold &&
     css`
       color: #375279;
       font-weight: 800;
+      font-family: "Poppins Bold", sans-serif;
     `};
   ${props =>
     props.large &&
     css`
-      color: ${props => (props.blue ? "#375279" : "rgba(253, 111, 110, 0.9)")};
-      font-weight: 800;
-      font-size: 26px;
-      font-family: "Intro Black", sans-serif;
+      color: ${props =>
+        props.blue
+          ? "#375279"
+          : props.black
+          ? "#000"
+          : "rgba(253, 111, 110, 0.9)"};
+      font-weight: 700;
+      font-size: ${props => (props.location ? "24px" : "32px")};
+      text-transform: ${props => props.uppercase && "uppercase"};
+      line-height: 32px;
+      margin: ${props => props.margin || "0.75em 0"};
+      font-family: " Poppins Bold", sans-serif;
       @media (max-width: 500px) {
         font-size: 22px;
       }
+    `};
+  ${props =>
+    props.nav &&
+    css`
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: "Poppins Regular", sans-serif;
     `};
 `;
 
@@ -77,17 +97,16 @@ export const Button = styled.button`
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  border-radius: 4px;
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Intro Black", sans-serif;
+  font-family: "Poppins Regular", sans-serif;
   font-weight: 600;
   outline: none;
   border: 0;
   background-color: rgba(253, 111, 110, 0.9);
-  height: 55px;
-  width: 246px;
+  height: 47px;
+  width: 220px;
   color: #fff;
   margin: 1em 0;
   transition: 500ms;

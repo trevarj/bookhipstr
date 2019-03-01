@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
-import { Subtitle, Text } from "../theme/index";
+import { Subtitle, Text, Button } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 0 0 2em 0;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #eaeaea;
 `;
 
-const PackageBox = styled.div`
+const PackageImage = styled.img`
   width: 300px;
   height: 300px;
   border: 1.5px solid transparent;
@@ -21,44 +22,48 @@ const PackageBox = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 4px;
-  filter: grayscale(75%);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-  transition: 1s;
-  &:hover {
-    filter: grayscale(0%);
-    border: 1.5px solid rgba(253, 111, 110, 0.9);
-  }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-gap: 25px 50px;
+  grid-gap: 50px;
   width: 75%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 400px;
+  grid-auto-rows: auto;
   @media (max-width: 720px) {
     grid-auto-rows: auto;
     width: 100%;
   }
 `;
 
+const PackageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: 1.5px solid transparent;
+  border-radius: 4px;
+  transition: 1s;
+  &:hover {
+    // border: 1.5px solid rgba(253, 111, 110, 0.9);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  }
+`;
+
 const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          margin: ".5em auto"
-        }}
-      >
-        <PackageBox background={`url('${post.frontmatter.image}')`} />
+      <PackageWrapper>
+        <PackageImage src={post.frontmatter.image} />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
           <Text bold>{post.frontmatter.excerpt}</Text>
         </div>
-      </div>
+      </PackageWrapper>
     </Link>
   );
 };
@@ -86,12 +91,18 @@ const Packages = () => (
     `}
     render={data => (
       <Wrapper>
-        <Subtitle>Choose your package</Subtitle>
+        <Subtitle>
+          Choose your <span style={{ color: "#ec7673" }}>activation</span>
+        </Subtitle>
+        <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
         <Grid>
           {data.allMarkdownRemark.edges.map(edge => (
             <PackageLink key={edge.node.id} post={edge.node} />
           ))}
         </Grid>
+        <div style={{ margin: "3em 0 1em 0" }}>
+          <Button>Learn more</Button>
+        </div>
       </Wrapper>
     )}
   />

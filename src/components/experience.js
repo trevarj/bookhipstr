@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #eaeaea;
   @media (max-width: 720px) {
     text-align: center;
   }
@@ -24,13 +25,12 @@ const Image = styled.img`
   height: 250px;
   margin: 2em 0;
   border-radius: 4px;
-  filter: grayscale(75%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border: 1.5px solid transparent;
   transition: 1s;
   &:hover {
-    filter: grayscale(0%);
-    border: 1.5px solid rgba(253, 111, 110, 0.9);
+    // border: 1.5px solid rgba(253, 111, 110, 0.9);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   }
 `;
 
@@ -46,7 +46,7 @@ const Grid = styled.div`
   grid-gap: 50px;
   width: 80%;
   margin: 1em auto 2em auto;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
 `;
 
@@ -82,7 +82,7 @@ function Experience({ image, title, description }) {
     <StyledExperience>
       <Image src={image} />
       <Column width="85%" alignitems="center">
-        <Text large blue>
+        <Text large black>
           {title}
         </Text>
         <Text>{description}</Text>
@@ -93,7 +93,9 @@ function Experience({ image, title, description }) {
 
 const Experiences = () => (
   <Wrapper>
-    <Subtitle>Choose your experience</Subtitle>
+    <Subtitle>
+      Choose your <span style={{ color: "#ec7673" }}>experience</span>
+    </Subtitle>
     <Grid>
       {images.map((key, index) => (
         <Experience
@@ -105,7 +107,7 @@ const Experiences = () => (
       ))}
     </Grid>
     <Link to="/book-now">
-      <Button>Book now</Button>
+      <Button>Ready to book</Button>
     </Link>
   </Wrapper>
 );

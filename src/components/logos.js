@@ -31,16 +31,6 @@ const Image = styled(Img)`
   justify-self: center;
 `;
 
-const StyledColumn = styled(Column)`
-  align-items: center;
-  margin: 0 0 2em 0;
-  text-align: center;
-  @media (max-width: 780px) {
-    width: 95%;
-    margin: 0 auto;
-  }
-`;
-
 function LogoImages({ fluid }) {
   return (
     <Grid>
@@ -69,15 +59,6 @@ function LogoImages({ fluid }) {
 function Logos() {
   return (
     <Wrapper>
-      <StyledColumn>
-        <Subtitle logo margin="0 0 .5em 0">
-          Storytelling is the most powerful tool to empower your brand.
-        </Subtitle>
-        <Text logo margin="0">
-          Here are a few brands that have trusted us
-        </Text>
-      </StyledColumn>
-
       <StaticQuery
         query={graphql`
           query {
