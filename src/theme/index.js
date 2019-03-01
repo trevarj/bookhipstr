@@ -56,6 +56,12 @@ export const Text = styled.p`
       font-family: "Poppins Bold", sans-serif;
     `};
   ${props =>
+    props.package &&
+    css`
+      font-weight: 800;
+      font-family: "Poppins Bold", sans-serif;
+    `};
+  ${props =>
     props.large &&
     css`
       color: ${props =>

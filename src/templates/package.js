@@ -14,7 +14,7 @@ const Grid = styled.div`
   width: 80%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 720px;
+  grid-auto-rows: auto;
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
