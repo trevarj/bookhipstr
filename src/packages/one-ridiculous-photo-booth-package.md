@@ -1,12 +1,13 @@
 ---
-path: /packages/one-ridiculous-photo-booth-package
+path: /one-ridiculous-photo-booth-package
 date: "2017-11-07"
 title: "The One Ridiculous Photo Booth Package"
 subtitle: "Our all-inclusive package will be a guaranteed good time for your next event."
 image: "https://i.postimg.cc/SsG4Hgss/oneHome.png"
 splash: "../images/oneRid.jpg"
 tagline: "Weddings, Birthdays, Mitzvahs, Sweet 16s, Anniversaries, Engagements – you name it, we’ll celebrate it with you! We guarantee a good time, every time."
-excerpt: "The most comprehensive, all-in-one photo booth package. EVER."
+excerpt1: "The most comprehensive, all-in-one photo booth package."
+excerpt2: "EVER."
 type: "image"
 ---
 

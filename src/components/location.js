@@ -43,9 +43,10 @@ const StyledColumn = styled(Column)`
 const Div = styled.div`
   width: 35%;
   height: 375px;
+  text-align: center;
   @media (max-width: 720px) {
     width: 95%;
-    margin: 4em 0 2em 0;
+    margin: 4em 0;
     height: 175px;
   }
 `;
@@ -56,14 +57,14 @@ export default function Location() {
       <Slide bottom>
         <Subtitle>Choose your location</Subtitle>
         <StyledRow>
-          <StyledColumn width="35%" alignitems="center">
-            <Text large blue>
+          <StyledColumn>
+            <Text large blue location>
               AZ, CA, CO, CT, D.C., DE, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN,
               MO, NV, NJ, NY, NC, OH, OR, PA, RI, SC, TN, TX, VA, WA, WI, & WV
             </Text>
             <Text large>Don't see your location?</Text>
             <Link to="/book-now">
-              <Button>Book now</Button>
+              <Button>Get in touch</Button>
             </Link>
           </StyledColumn>
           <Div>
@@ -83,6 +84,9 @@ export default function Location() {
                 <Img fluid={data.placeholderImage.childImageSharp.fluid} />
               )}
             />
+            <Subtitle transform="none" margin="1em 0">
+              We'll be there for you
+            </Subtitle>
           </Div>
         </StyledRow>
       </Slide>
