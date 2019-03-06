@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 `;
 
@@ -56,11 +57,18 @@ const Div = styled.div`
   }
 `;
 
+const StyledColumn = styled(Column)`
+  margin: 0 0 0 3em;
+  @media (max-width: 780px) {
+    margin: 0 auto;
+  }
+`;
+
 export default function Footer() {
   return (
     <Wrapper>
       <StyledRow>
-        <Column margin="0 0 0 3em">
+        <StyledColumn>
           <Div>
             <Logo />
           </Div>
@@ -106,7 +114,7 @@ export default function Footer() {
               <FaTwitter size="2em" color="#fff" style={{ margin: "0 .5em" }} />
             </a>
           </StyledLogoRow>
-        </Column>
+        </StyledColumn>
       </StyledRow>
       <Text white>
         &copy; {new Date().getFullYear()} Hipstr Photobooth All rights reserved
