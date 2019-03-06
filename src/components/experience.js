@@ -29,7 +29,6 @@ const Image = styled.img`
   border: 1.5px solid transparent;
   transition: 1s;
   &:hover {
-    // border: 1.5px solid rgba(253, 111, 110, 0.9);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   }
 `;
@@ -80,7 +79,7 @@ const images = [
 function Experience({ image, title, description }) {
   return (
     <StyledExperience>
-      <Image src={image} />
+      <Image alt="Hipstr Experience Images" src={image} />
       <Column width="85%" alignitems="center">
         <Text uppercase large black>
           {title}

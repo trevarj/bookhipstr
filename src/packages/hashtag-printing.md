@@ -11,4 +11,4 @@ subtitle: "Guarantee that your social sharing goals are met with Hashtag Printin
 type: "image"
 ---
 
-<img src="../images/hashtagGrid.jpg">
+<img alt="Hipstr Hashtag Grid" src="../images/hashtagGrid.jpg">

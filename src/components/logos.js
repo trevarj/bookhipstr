@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Column, Text, Subtitle } from "../theme/index";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
@@ -16,8 +15,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   height: 100%;
-  width: 75%;
-  grid-gap: 25px;
+  width: 70%;
+  grid-gap: 5px;
   @media (max-width: 780px) {
     width: 100%;
     margin: 0;
@@ -26,7 +25,7 @@ const Grid = styled.div`
 `;
 
 const Image = styled(Img)`
-  width: 50%;
+  width: 60%;
   align-self: center;
   justify-self: center;
 `;
@@ -34,24 +33,78 @@ const Image = styled(Img)`
 function LogoImages({ fluid }) {
   return (
     <Grid>
-      <Image fluid={fluid.image6.childImageSharp.fluid} />
-      <Image fluid={fluid.image2.childImageSharp.fluid} />
-      <Image fluid={fluid.image3.childImageSharp.fluid} />
-      <Image fluid={fluid.image5.childImageSharp.fluid} />
-      <Image fluid={fluid.image4.childImageSharp.fluid} />
-      <Image fluid={fluid.image1.childImageSharp.fluid} />
-      <Image fluid={fluid.image7.childImageSharp.fluid} />
-      <Image fluid={fluid.image8.childImageSharp.fluid} />
-      <Image fluid={fluid.image9.childImageSharp.fluid} />
-      <Image fluid={fluid.image10.childImageSharp.fluid} />
-      <Image fluid={fluid.image11.childImageSharp.fluid} />
-      <Image fluid={fluid.image12.childImageSharp.fluid} />
-      <Image fluid={fluid.image13.childImageSharp.fluid} />
-      <Image fluid={fluid.image14.childImageSharp.fluid} />
-      <Image fluid={fluid.image15.childImageSharp.fluid} />
-      <Image fluid={fluid.image16.childImageSharp.fluid} />
-      <Image fluid={fluid.image17.childImageSharp.fluid} />
-      <Image fluid={fluid.image18.childImageSharp.fluid} />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image6.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image2.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image3.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image5.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image4.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image1.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image7.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image8.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image9.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image10.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image11.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image12.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image13.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image14.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image15.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image16.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image17.childImageSharp.fluid}
+      />
+      <Image
+        alt="Hipstr Who Have We Worked With Logo"
+        fluid={fluid.image18.childImageSharp.fluid}
+      />
     </Grid>
   );
 }

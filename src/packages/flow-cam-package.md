@@ -11,4 +11,4 @@ excerpt2: "SURE TO IMPRESS."
 type: "image"
 ---
 
-<img src="../images/flow.jpg">
+<img alt="Hipstr Flow Cam" src="../images/flow.jpg">

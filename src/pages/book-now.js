@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Splash from "../components/splash";
-import Content from "../components/content";
 import styled from "styled-components";
 
 const Div = styled.div`

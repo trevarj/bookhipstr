@@ -50,7 +50,10 @@ export default function Splash({ src, type, title, text }) {
       <Div />
       {type === "image" && (
         <Wrapper>
-          <StyledImg fluid={src.childImageSharp.fluid}>
+          <StyledImg
+            alt={`Hipstr ${title} Package Splash`}
+            fluid={src.childImageSharp.fluid}
+          >
             <StyledTextColumn>
               <Subtitle pink large>
                 {title}

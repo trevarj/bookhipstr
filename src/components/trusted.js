@@ -6,7 +6,7 @@ import Img from "gatsby-image";
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 3em 0;
+  padding: 2.5em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,12 +33,30 @@ const Grid = styled.div`
 function TrustedBy({ fluid }) {
   return (
     <Grid>
-      <Img fluid={fluid.image6.childImageSharp.fluid} />
-      <Img fluid={fluid.image2.childImageSharp.fluid} />
-      <Img fluid={fluid.image3.childImageSharp.fluid} />
-      <Img fluid={fluid.image5.childImageSharp.fluid} />
-      <Img fluid={fluid.image4.childImageSharp.fluid} />
-      <Img fluid={fluid.image1.childImageSharp.fluid} />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image6.childImageSharp.fluid}
+      />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image2.childImageSharp.fluid}
+      />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image3.childImageSharp.fluid}
+      />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image5.childImageSharp.fluid}
+      />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image4.childImageSharp.fluid}
+      />
+      <Img
+        alt="Hipstr Awards Won Logos"
+        fluid={fluid.image1.childImageSharp.fluid}
+      />
     </Grid>
   );
 }
@@ -80,7 +98,7 @@ export default Trusted;
 export const logoImage = graphql`
   fragment logoImage on File {
     childImageSharp {
-      fluid(maxWidth: 125, maxHeight: 125) {
+      fluid(maxWidth: 75, maxHeight: 75) {
         ...GatsbyImageSharpFluid
       }
     }
