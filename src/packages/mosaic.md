@@ -1,6 +1,6 @@
 ---
 path: /mosaic
-date: "2017-11-07"
+date: "2019-02-26"
 title: "Hipstr Mosaic Wall"
 image: "https://i.postimg.cc/W4W6Svmb/mosaichome1-1.png"
 splash: "../images/mosaic.jpg"
