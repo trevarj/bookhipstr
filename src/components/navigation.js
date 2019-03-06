@@ -22,7 +22,7 @@ const Header = styled.header`
 
 const StyledLink = styled(Link)`
   height: 100%;
-  width: 125px;
+  width: 121px;
   border-radius: 0;
   color: #fff;
   margin: 1em 0;
@@ -32,19 +32,16 @@ const StyledLink = styled(Link)`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Poppins Bold", sans-serif;
-  font-weight: 700;
-  background-color: rgba(253, 111, 110, 0.9);
+  font-weight: 600;
   outline: none;
   border: 0;
-  letter-spacing: 1px;
+
+  background: #f16c6d;
+  font-family: "Core Circus", sans-serif;
   &:hover {
-    background-color: rgba(253, 111, 110, 0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  @media (max-width: 480px) {
-    padding: 0 1em;
+    background-color: #e35b5c;
   }
 `;
 
@@ -71,7 +68,7 @@ const Div = styled.div`
 
 const Image = styled.img`
   margin: 0 3em 0 0;
-  width: 225px;
+  width: 200px;
   @media (max-width: 500px) {
     width: 150px;
   }

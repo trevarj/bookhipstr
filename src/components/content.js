@@ -39,7 +39,7 @@ const Content = ({ title, title2, text, type }) => (
           query {
             placeholderImage: file(relativePath: { eq: "meethipstr.png" }) {
               childImageSharp {
-                fluid(maxWidth: 100) {
+                fluid(maxWidth: 75) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -53,8 +53,9 @@ const Content = ({ title, title2, text, type }) => (
     </div>
     <StyledColumn textalign={type === "package" && "center"}>
       <Slide bottom>
-        <Subtitle white>
-          <span style={{ color: "#ec7673" }}>{title}</span> {title2}
+        <Subtitle banner>
+          {title}
+          <span style={{ color: "#ec7673" }}> {title2}</span>
         </Subtitle>
         <Text white>{text}</Text>
       </Slide>
