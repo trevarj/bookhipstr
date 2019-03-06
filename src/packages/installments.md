@@ -1,6 +1,6 @@
 ---
 path: /installments
-date: "2017-11-07"
+date: "2019-02-25"
 title: "Hipstr Retail Kiosk"
 image: "https://i.postimg.cc/C1SJrNXm/install-Home.png"
 splash: "../images/flowCam.jpg"

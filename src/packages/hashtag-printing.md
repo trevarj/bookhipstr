@@ -1,6 +1,6 @@
 ---
 path: /hashtag-printing
-date: "2017-11-07"
+date: "2019-02-28"
 title: "Hashtag Printing"
 image: "https://i.postimg.cc/s280n7yL/hash-Tag-Home.png"
 splash: "../images/hashtag.jpg"

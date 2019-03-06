@@ -37,7 +37,9 @@ const StyledExperience = styled(Column)`
   width: 100%;
   height: 100%;
   align-items: center;
-  text-align: center;
+  @media (max-width: 720px) {
+    text-align: center;
+  }
 `;
 
 const Grid = styled.div`

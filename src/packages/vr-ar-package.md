@@ -1,6 +1,6 @@
 ---
 path: /vr-ar-package
-date: "2017-11-07"
+date: "2019-02-26"
 title: "Virtual Reality"
 image: "https://i.postimg.cc/W388BZPj/vr-Home-Icon.png"
 splash: "../images/vr.jpg"

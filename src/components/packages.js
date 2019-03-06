@@ -15,8 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const PackageImage = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 85%;
   background: ${props => props.background};
   object-fit: contain;
   background-size: cover;
@@ -40,7 +39,7 @@ const PackageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5em 1em;
+  padding: 2em 1em;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -72,7 +71,7 @@ const Packages = () => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               id
@@ -102,7 +101,10 @@ const Packages = () => (
           ))}
         </Grid>
         <div style={{ margin: "3em 0 1em 0" }}>
-          <Button>Learn more</Button>
+          <Link to="/book-now">
+            {" "}
+            <Button>Learn more</Button>
+          </Link>
         </div>
       </Wrapper>
     )}
