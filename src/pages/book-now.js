@@ -8,6 +8,7 @@ import styled from "styled-components";
 const Div = styled.div`
   width: 100%;
   height: 100%;
+  margin-top: 5em;
 `;
 
 function Form() {
@@ -40,20 +41,13 @@ const BookNow = () => (
       title="Book Now"
       keywords={[`photobooth`, `newyork`, `events`, `party`]}
     />
-    <Splash
-      type="video"
-      src="https://player.vimeo.com/video/254001359?background=1"
-    />
-    <Content
-      title="Fun. Modern. Ridiculous."
-      title2="And here to guarantee a good time."
-      text=" Tired of tacky, under-developed and not-fun photo booths, we came up
-      with a better way to administer the fun. Read more on how we
-      specialize in delivering interactive photo & video activations across
-      the USA."
-    />
+
     <div
-      style={{ margin: "0 auto", display: "flex", justifyContent: "center" }}
+      style={{
+        margin: "0 auto",
+        display: "flex",
+        justifyContent: "center"
+      }}
     >
       <Form />
     </div>
