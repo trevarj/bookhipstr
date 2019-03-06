@@ -89,7 +89,7 @@ const Packages = () => (
     `}
     render={data => (
       <Wrapper>
-        <Subtitle>
+        <Subtitle large>
           Choose your <span style={{ color: "#ec7673" }}>activation</span>
         </Subtitle>
         <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>

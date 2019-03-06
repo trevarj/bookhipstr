@@ -55,7 +55,7 @@ export default function Location() {
   return (
     <Wrapper>
       <Slide bottom>
-        <Subtitle>Choose your location</Subtitle>
+        <Subtitle large>Choose your location</Subtitle>
         <StyledRow>
           <StyledColumn>
             <Text large blue location>

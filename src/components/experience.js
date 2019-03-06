@@ -93,7 +93,7 @@ function Experience({ image, title, description }) {
 
 const Experiences = () => (
   <Wrapper>
-    <Subtitle>
+    <Subtitle large>
       Choose your <span style={{ color: "#ec7673" }}>experience</span>
     </Subtitle>
     <Grid>
