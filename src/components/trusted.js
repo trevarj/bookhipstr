@@ -19,9 +19,9 @@ const Wrapper = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-gap: 25px;
-  width: 65%;
+  width: 55%;
   margin: 1em auto 2em auto;
-  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: auto;
   @media (max-width: 720px) {
     width: 95%;
@@ -33,30 +33,60 @@ const Grid = styled.div`
 function TrustedBy({ fluid }) {
   return (
     <Grid>
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image6.childImageSharp.fluid}
-      />
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image2.childImageSharp.fluid}
-      />
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image3.childImageSharp.fluid}
-      />
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image5.childImageSharp.fluid}
-      />
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image4.childImageSharp.fluid}
-      />
-      <Img
-        alt="Hipstr Awards Won Logos"
-        fluid={fluid.image1.childImageSharp.fluid}
-      />
+      <a
+        href="https://www.weddingwire.com/biz/hipstr-photo-booth/8cf07228ba57a560.html#about"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image6.childImageSharp.fluid}
+        />
+      </a>
+      <a
+        href="https://www.weddingwire.com/biz/hipstr-photo-booth/8cf07228ba57a560.html#about"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image2.childImageSharp.fluid}
+        />
+      </a>
+      <a
+        href="https://www.theknot.com/marketplace/the-hipstr-company-manhattan-manhattan-ny-1088193#reviews-area"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image3.childImageSharp.fluid}
+        />
+      </a>
+      <a
+        href="https://www.theknot.com/marketplace/the-hipstr-company-manhattan-manhattan-ny-1088193#reviews-area"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image5.childImageSharp.fluid}
+        />
+      </a>
+      <a
+        href="https://www.theknot.com/marketplace/the-hipstr-company-manhattan-manhattan-ny-1088193#reviews-area"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image4.childImageSharp.fluid}
+        />
+      </a>
+      <a
+        href="https://threebestrated.com/photo-booth-companies-in-new-york-ny"
+        target="_blank"
+      >
+        <Img
+          alt="Hipstr Awards Won Logos"
+          fluid={fluid.image1.childImageSharp.fluid}
+        />
+      </a>
     </Grid>
   );
 }
@@ -98,7 +128,7 @@ export default Trusted;
 export const logoImage = graphql`
   fragment logoImage on File {
     childImageSharp {
-      fluid(maxWidth: 75, maxHeight: 75) {
+      fluid(maxWidth: 125, maxHeight: 125) {
         ...GatsbyImageSharpFluid
       }
     }

@@ -101,7 +101,10 @@ const Packages = () => (
           ))}
         </Grid>
         <div style={{ margin: "3em 0 1em 0" }}>
-          <Button>Learn more</Button>
+          <Link to="/book-now">
+            {" "}
+            <Button>Learn more</Button>
+          </Link>
         </div>
       </Wrapper>
     )}
