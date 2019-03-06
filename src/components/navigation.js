@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import styled from "styled-components";
-import Logo from "./logo";
+import Logo from "../images/hipstr.png";
 import { Text, Row } from "../theme/index";
 import Burger from "./burger";
 
@@ -69,30 +69,20 @@ const Div = styled.div`
   }
 `;
 
+const Image = styled.img`
+  margin: 0 3em 0 0;
+  width: 225px;
+  @media (max-width: 500px) {
+    width: 150px;
+  }
+`;
+
 class Navigation extends Component {
-  // state = {
-  //   active: false
-  // };
-
-  // listenScrollEvent = e => {
-  //   if (window.scrollY > 150) {
-  //     this.setState({ active: true });
-  //   } else {
-  //     this.setState({ active: false });
-  //   }
-  // };
-
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.listenScrollEvent);
-  // }
-
   render() {
     return (
       <Header>
         <Link to="/">
-          <div style={{ width: 200, margin: "0 3em 0 0" }}>
-            <Logo />
-          </div>
+          <Image src={Logo} />
         </Link>
 
         <Div>
