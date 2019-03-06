@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
-// import Content from "../components/content";
 import PackageBanner from "../components/packagebanner";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
@@ -74,11 +73,6 @@ export default function Package({ data }) {
         title={frontmatter.title}
         text={frontmatter.subtitle}
       />
-      {/* <Content
-        type="package"
-        title={frontmatter.title}
-        text={frontmatter.subtitle}
-      /> */}
       <Grid>
         <Information
           className="package"

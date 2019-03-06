@@ -55,7 +55,10 @@ const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
       <PackageWrapper>
-        <PackageImage src={post.frontmatter.image} />
+        <PackageImage
+          alt={`Hipstr ${post.title} Package Image`}
+          src={post.frontmatter.image}
+        />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
           <Text>{post.frontmatter.excerpt1}</Text>
           <Text package>{post.frontmatter.excerpt2}</Text>

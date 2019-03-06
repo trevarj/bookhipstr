@@ -11,4 +11,4 @@ type: "image"
 subtitle: "Hipstr's Mosaic Wall has been designed to create a uniquely interactive experience. Using our high quality guest generated photos, we'll create a custom physical or digital mosaic of your event photos to showcase your brand unlike anything else."
 ---
 
-<img src="../images/mosaicGrid.jpg">
+<img alt="Hipstr Mosaic" src="../images/mosaicGrid.jpg">

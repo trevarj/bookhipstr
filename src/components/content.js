@@ -47,7 +47,10 @@ const Content = ({ title, title2, text, type }) => (
           }
         `}
         render={data => (
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          <Img
+            alt="Meet Hipstr Image with Logo"
+            fluid={data.placeholderImage.childImageSharp.fluid}
+          />
         )}
       />
     </div>

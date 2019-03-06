@@ -11,4 +11,4 @@ type: "image"
 subtitle: "Make more of your retail space by adding Hipstr's Photo and Video kiosk. Track the data and gather the key metrics you need for your marketing efforts, and allow your guests to leave with branded high quality media."
 ---
 
-<img src="../images/installmentsGrid.jpg">
+<img alt="Hipstr Installments" src="../images/installmentsGrid.jpg">
