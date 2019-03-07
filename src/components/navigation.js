@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   width: 121px;
   border-radius: 0;
   color: #fff;
-  margin: 1em 0;
+  margin: 1em 0 1em 1.75em;
   transition: 500ms;
   text-transform: uppercase;
   display: flex;
@@ -49,9 +49,7 @@ const StyledLink = styled(Link)`
 
 const StyledRow = styled(Row)`
   display: flex;
-  width: 400px;
   align-items: center;
-  justify-content: space-evenly;
   height: 100%;
   margin: 0 0 0 3em;
   @media (max-width: 920px) {

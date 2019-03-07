@@ -32,7 +32,6 @@ const StyledRow = styled(Row)`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: ${props => props.copy && "0 0 0 3em"};
   @media (max-width: 780px) {
     flex-direction: column;
     align-items: center;
@@ -58,7 +57,7 @@ const Div = styled.div`
 `;
 
 const StyledColumn = styled(Column)`
-  margin: 0 0 0 3em;
+  margin: 0 0 0 5em;
   @media (max-width: 780px) {
     margin: 0 auto;
   }

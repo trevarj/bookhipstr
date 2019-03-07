@@ -45,7 +45,7 @@ const StyledExperience = styled(Column)`
 const Grid = styled.div`
   display: grid;
   grid-gap: 50px;
-  width: 80%;
+  width: 82%;
   margin: 1em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
