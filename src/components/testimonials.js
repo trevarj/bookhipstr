@@ -74,14 +74,11 @@ export default class Testimonial extends Component {
   }
 
   render() {
-    // const { testimonial } = this.state;
-    // console.log(testimonial);
-
     return (
       <Wrapper>
         <Zoom bottom>
           <StyledColumn>
-            <Subtitle testimonial>{`"${
+            <Subtitle testimonial transform="none">{`"${
               this.state.testimonial.text
             }"`}</Subtitle>
             <Text white>{`-${this.state.testimonial.author}`}</Text>

@@ -82,7 +82,7 @@ function Experience({ image, title, description }) {
   return (
     <StyledExperience>
       <Image alt="Hipstr Experience Images" src={image} />
-      <Column width="85%" alignitems="center">
+      <Column width="90%" alignitems="center" margin="0 auto">
         <Text uppercase large black>
           {title}
         </Text>
