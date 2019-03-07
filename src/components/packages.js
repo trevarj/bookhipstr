@@ -25,7 +25,7 @@ const PackageImage = styled.img`
 const Grid = styled.div`
   display: grid;
   grid-gap: 50px;
-  width: 75%;
+  width: 80%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;

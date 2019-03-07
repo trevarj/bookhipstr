@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledColumn = styled(Column)`
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   align-items: center;

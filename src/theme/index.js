@@ -92,6 +92,7 @@ export const Text = styled.p`
   ${props =>
     props.nav &&
     css`
+      margin: 0 1.75em;
       text-transform: uppercase;
       font-weight: 400;
       font-family: "Poppins Regular", sans-serif;
