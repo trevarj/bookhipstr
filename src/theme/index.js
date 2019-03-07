@@ -69,7 +69,9 @@ export const Text = styled.p`
     css`
       font-weight: 800;
       font-family: "Poppins Bold", sans-serif;
+      margin-top: 0.75em;
     `};
+
   ${props =>
     props.large &&
     css`
@@ -84,7 +86,7 @@ export const Text = styled.p`
       text-transform: ${props => props.uppercase && "uppercase"};
       line-height: 32px;
       margin: ${props => props.margin || "0.75em 0"};
-      font-family: " Poppins Bold", sans-serif;
+      font-family: "Poppins Bold", sans-serif;
       @media (max-width: 500px) {
         font-size: 22px;
       }
