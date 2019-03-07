@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
   width: 121px;
   border-radius: 0;
   color: #fff;
-  margin: 1em 0 1em 1.5em;
+  margin: 1em 0 1em 1.75em;
   transition: 500ms;
   text-transform: uppercase;
   display: flex;
