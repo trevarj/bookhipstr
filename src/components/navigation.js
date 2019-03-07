@@ -18,6 +18,9 @@ const Header = styled.header`
   z-index: 1000;
   transition: 500ms;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  @media (max-width: 920px) {
+    margin: 0 auto;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -37,7 +40,6 @@ const StyledLink = styled(Link)`
   font-weight: 600;
   outline: none;
   border: 0;
-
   background: #f16c6d;
   font-family: "Core Circus", sans-serif;
   &:hover {
@@ -71,6 +73,7 @@ const Image = styled.img`
   width: 200px;
   @media (max-width: 500px) {
     width: 150px;
+    margin: 0;
   }
 `;
 
@@ -78,22 +81,27 @@ class Navigation extends Component {
   render() {
     return (
       <Header>
-        <Link to="/">
-          <Image src={Logo} />
-        </Link>
-
-        <Div>
-          <Burger />
-        </Div>
-        <StyledRow>
-          <a href="https://gallery.bookhipstr.com/browse">
-            <Text nav>Gallery</Text>
-          </a>
-          <a href="tel:8442665447">
-            <Text bold>844.266.5447</Text>
-          </a>
-          <StyledLink to="/book-now">Book Now</StyledLink>
-        </StyledRow>
+        <Row
+          alignitems="center"
+          justifycontent="space-between"
+          style={{ width: "80%", height: "100%" }}
+        >
+          <Link to="/">
+            <Image src={Logo} />
+          </Link>
+          <Div>
+            <Burger />
+          </Div>
+          <StyledRow>
+            <a href="https://gallery.bookhipstr.com/browse">
+              <Text nav>Gallery</Text>
+            </a>
+            <a href="tel:8442665447">
+              <Text bold>844.266.5447</Text>
+            </a>
+            <StyledLink to="/book-now">Book Now</StyledLink>
+          </StyledRow>
+        </Row>
       </Header>
     );
   }

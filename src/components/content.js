@@ -39,7 +39,7 @@ const Content = ({ title, title2, text, type }) => (
           query {
             placeholderImage: file(relativePath: { eq: "meethipstr.png" }) {
               childImageSharp {
-                fluid(maxWidth: 75) {
+                fluid(maxWidth: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }
