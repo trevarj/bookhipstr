@@ -26,12 +26,6 @@ module.exports = {
         path: `${__dirname}/src/packages`
       }
     },
-    {
-      resolve: "gatsby-plugin-drift",
-      options: {
-        appId: "h39e7gnm2pz5"
-      }
-    },
     `gatsby-transformer-javascript-frontmatter`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
