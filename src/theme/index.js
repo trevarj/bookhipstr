@@ -65,6 +65,13 @@ export const Text = styled.p`
       font-family: "Poppins Bold", sans-serif;
     `};
   ${props =>
+    props.italic &&
+    css`
+      font-style: italic;
+      line-height: 38px;
+      font-size: 16px;
+    `};
+  ${props =>
     props.package &&
     css`
       font-weight: 800;
