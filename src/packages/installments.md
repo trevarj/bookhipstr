@@ -3,7 +3,7 @@ path: /installments
 date: "2019-02-25"
 title: "Hipstr Retail Kiosk"
 image: "https://i.postimg.cc/C1SJrNXm/install-Home.png"
-splash: "../images/flowCam.jpg"
+splash: "../images/installments.jpg"
 tagline: "With virtually endless possibilities, we’ll create a completely custom experience centered around your brand."
 excerpt1: "Make more with your space."
 excerpt2: "INSTALL & ANALYTICS"
