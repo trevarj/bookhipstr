@@ -44,6 +44,16 @@ export const Subtitle = styled.h3`
       text-transform: none;
       font-family: "Poppins Regular", sans-serif;
     `};
+  ${props =>
+    props.one &&
+    css`
+      font-size: 48px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
   @media (max-width: 500px) {
     font-size: 28px;
   }
@@ -57,6 +67,16 @@ export const Text = styled.p`
   margin: 0;
   line-height: 26px;
   letter-spacing: 1px;
+  ${props =>
+    props.one &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
   ${props =>
     props.bold &&
     css`
