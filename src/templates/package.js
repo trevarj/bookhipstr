@@ -25,9 +25,6 @@ const Grid = styled.div`
 const Information = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 const Div = styled.div`
