@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
+import OneSplash from "../components/onesplash";
 import PackageBanner from "../components/packagebanner";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
@@ -67,12 +68,17 @@ export default function Package({ data }) {
         title={frontmatter.title}
         keywords={[`photobooth`, `newyork`, `events`, `party`]}
       />
-      <Splash
-        type={frontmatter.type}
-        src={frontmatter.splash}
-        title={frontmatter.title}
-        text={frontmatter.subtitle}
-      />
+      {frontmatter.path !== "/one-ridiculous-photo-booth-package" && (
+        <Splash
+          type={frontmatter.type}
+          src={frontmatter.splash}
+          title={frontmatter.title}
+          text={frontmatter.subtitle}
+        />
+      )}
+      {frontmatter.path === "/one-ridiculous-photo-booth-package" && (
+        <OneSplash />
+      )}
       <Grid>
         <Information
           className="package"
