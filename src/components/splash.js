@@ -10,6 +10,9 @@ const Wrapper = styled.div`
   @media (max-width: 720px) {
     min-height: 100%;
   }
+  &::after {
+    background-position: center;
+  }
 `;
 
 const VideoWrapper = styled.div`
@@ -24,6 +27,9 @@ const StyledImg = styled(BackgroundImage)`
   margin: 0 auto;
   justify-content: flex-end;
   flex-direction: column;
+  &::after {
+    background-position: center;
+  }
   @media (max-width: 720px) {
     height: 450px;
     justify-content: center;
