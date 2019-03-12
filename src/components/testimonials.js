@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Column, Subtitle, Text } from "../theme/index";
-import Zoom from "react-reveal/Zoom";
+import Reveal from "react-reveal/Reveal";
 
 const Wrapper = styled.div`
   min-height: 300px;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledColumn = styled(Column)`
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -70,23 +70,20 @@ export default class Testimonial extends Component {
       if (i === arr.length) {
         i = 0;
       }
-    }, 5000);
+    }, 4000);
   }
 
   render() {
-    // const { testimonial } = this.state;
-    // console.log(testimonial);
-
     return (
       <Wrapper>
-        <Zoom bottom>
-          <StyledColumn>
-            <Subtitle testimonial>{`"${
+        <StyledColumn>
+          <Reveal effect="fadeIn">
+            <Subtitle testimonial transform="none">{`"${
               this.state.testimonial.text
             }"`}</Subtitle>
             <Text white>{`-${this.state.testimonial.author}`}</Text>
-          </StyledColumn>
-        </Zoom>
+          </Reveal>
+        </StyledColumn>
       </Wrapper>
     );
   }

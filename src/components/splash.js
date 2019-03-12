@@ -25,7 +25,7 @@ const StyledImg = styled(BackgroundImage)`
   justify-content: flex-end;
   flex-direction: column;
   @media (max-width: 720px) {
-    min-height: 500px;
+    height: 450px;
     justify-content: center;
   }
 `;
@@ -50,7 +50,10 @@ export default function Splash({ src, type, title, text }) {
       <Div />
       {type === "image" && (
         <Wrapper>
-          <StyledImg fluid={src.childImageSharp.fluid}>
+          <StyledImg
+            alt={`Hipstr ${title} Package Splash`}
+            fluid={src.childImageSharp.fluid}
+          >
             <StyledTextColumn>
               <Subtitle pink large>
                 {title}

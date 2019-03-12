@@ -1,6 +1,6 @@
 ---
 path: /hipstr-array-plus
-date: "2017-11-07"
+date: "2019-03-02"
 title: "Hipstr Array Plus"
 image: "https://i.postimg.cc/Pfpk1Dsz/array.jpg"
 splash: "../images/arraySplash.jpg"
@@ -11,4 +11,4 @@ subtitle: "Why limit your photo booth experience to one camera? That’s exactly
 type: "image"
 ---
 
-<img src="../images/arrayGrid.jpg">
+<img alt="Array Grid" src="../images/arrayGrid.jpg">

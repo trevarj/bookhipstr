@@ -29,7 +29,6 @@ const Image = styled.img`
   border: 1.5px solid transparent;
   transition: 1s;
   &:hover {
-    // border: 1.5px solid rgba(253, 111, 110, 0.9);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   }
 `;
@@ -38,13 +37,15 @@ const StyledExperience = styled(Column)`
   width: 100%;
   height: 100%;
   align-items: center;
-  text-align: center;
+  @media (max-width: 720px) {
+    text-align: center;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-gap: 50px;
-  width: 80%;
+  width: 82%;
   margin: 1em auto 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
@@ -80,8 +81,8 @@ const images = [
 function Experience({ image, title, description }) {
   return (
     <StyledExperience>
-      <Image src={image} />
-      <Column width="85%" alignitems="center">
+      <Image alt="Hipstr Experience Images" src={image} />
+      <Column width="90%" alignitems="center" margin="0 auto">
         <Text uppercase large black>
           {title}
         </Text>
@@ -93,7 +94,7 @@ function Experience({ image, title, description }) {
 
 const Experiences = () => (
   <Wrapper>
-    <Subtitle>
+    <Subtitle large>
       Choose your <span style={{ color: "#ec7673" }}>experience</span>
     </Subtitle>
     <Grid>

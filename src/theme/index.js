@@ -26,14 +26,33 @@ export const Subtitle = styled.h3`
   line-height: 1.4em;
   margin: ${props => props.margin || "0.5em 0"};
   text-transform: ${props => props.transform || "uppercase"};
-  color: ${props =>
-    props.pink ? "#ec7673" : props.white ? "#fff" : "#2b2b2b"};
+  color: ${props => (props.pink ? "#ec7673" : props.white ? "#fff" : "#000")};
   ${props =>
     props.testimonial &&
     css`
       font-size: 29px;
       color: #fff;
       line-height: 51px;
+    `};
+  ${props =>
+    props.banner &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 400;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
+    props.one &&
+    css`
+      font-size: 48px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
     `};
   @media (max-width: 500px) {
     font-size: 28px;
@@ -49,6 +68,16 @@ export const Text = styled.p`
   line-height: 26px;
   letter-spacing: 1px;
   ${props =>
+    props.one &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
     props.bold &&
     css`
       color: #375279;
@@ -56,11 +85,20 @@ export const Text = styled.p`
       font-family: "Poppins Bold", sans-serif;
     `};
   ${props =>
+    props.italic &&
+    css`
+      font-style: italic;
+      line-height: 38px;
+      font-size: 16px;
+    `};
+  ${props =>
     props.package &&
     css`
       font-weight: 800;
       font-family: "Poppins Bold", sans-serif;
+      margin-top: 0.75em;
     `};
+
   ${props =>
     props.large &&
     css`
@@ -75,7 +113,7 @@ export const Text = styled.p`
       text-transform: ${props => props.uppercase && "uppercase"};
       line-height: 32px;
       margin: ${props => props.margin || "0.75em 0"};
-      font-family: " Poppins Bold", sans-serif;
+      font-family: "Poppins Bold", sans-serif;
       @media (max-width: 500px) {
         font-size: 22px;
       }
@@ -83,6 +121,7 @@ export const Text = styled.p`
   ${props =>
     props.nav &&
     css`
+      margin: 0 1.75em;
       text-transform: uppercase;
       font-weight: 400;
       font-family: "Poppins Regular", sans-serif;
@@ -117,25 +156,16 @@ export const Button = styled.button`
   font-weight: 600;
   outline: none;
   border: 0;
-  background-color: rgba(253, 111, 110, 0.9);
+  background-color: #f16c6d;
   height: 47px;
   width: 220px;
   color: #fff;
   margin: 1em 0;
-  transition: 500ms;
+  transition: 250ms;
+  border: 0.5px solid transparent;
   &:hover {
-    background-color: rgba(253, 111, 110, 0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.5px solid #f16c6d;
+    color: #f16c6d;
   }
-  ${props =>
-    props.nav &&
-    css`
-      height: 100%;
-      width: 145px;
-      border-radius: 0;
-      font-family: "Core Circus", sans-serif;
-      @media (max-width: 480px) {
-        padding: 0 1em;
-      }
-    `}
 `;

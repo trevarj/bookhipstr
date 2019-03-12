@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Splash from "../components/splash";
-// import Content from "../components/content";
+import OneSplash from "../components/onesplash";
 import PackageBanner from "../components/packagebanner";
 import Testimonials from "../components/testimonials";
 import SEO from "../components/seo";
@@ -25,9 +25,6 @@ const Grid = styled.div`
 const Information = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 const Div = styled.div`
@@ -50,7 +47,7 @@ function Form() {
         style={{
           width: "10px",
           minWidth: "100%",
-          height: "714px",
+          height: "715px",
           border: "none"
         }}
         scrolling="no"
@@ -68,17 +65,17 @@ export default function Package({ data }) {
         title={frontmatter.title}
         keywords={[`photobooth`, `newyork`, `events`, `party`]}
       />
-      <Splash
-        type={frontmatter.type}
-        src={frontmatter.splash}
-        title={frontmatter.title}
-        text={frontmatter.subtitle}
-      />
-      {/* <Content
-        type="package"
-        title={frontmatter.title}
-        text={frontmatter.subtitle}
-      /> */}
+      {frontmatter.path !== "/one-ridiculous-photo-booth-package" && (
+        <Splash
+          type={frontmatter.type}
+          src={frontmatter.splash}
+          title={frontmatter.title}
+          text={frontmatter.subtitle}
+        />
+      )}
+      {frontmatter.path === "/one-ridiculous-photo-booth-package" && (
+        <OneSplash />
+      )}
       <Grid>
         <Information
           className="package"

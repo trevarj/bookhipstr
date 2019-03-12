@@ -26,12 +26,6 @@ module.exports = {
         path: `${__dirname}/src/packages`
       }
     },
-    {
-      resolve: "gatsby-plugin-drift",
-      options: {
-        appId: "h39e7gnm2pz5"
-      }
-    },
     `gatsby-transformer-javascript-frontmatter`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -42,10 +36,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 600
+              maxWidth: 650,
+              linkImagesToOriginal: false,
+              backgroundColor: "transparent"
             }
           }
         ]

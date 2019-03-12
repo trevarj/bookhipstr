@@ -55,7 +55,9 @@ export default function Location() {
   return (
     <Wrapper>
       <Slide bottom>
-        <Subtitle>Choose your location</Subtitle>
+        <Subtitle large>
+          Choose your <span style={{ color: "#ec7673" }}>location</span>
+        </Subtitle>
         <StyledRow>
           <StyledColumn>
             <Text large blue location>
@@ -81,7 +83,10 @@ export default function Location() {
                 }
               `}
               render={data => (
-                <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                <Img
+                  alt="Hipstr Map of USA territories served"
+                  fluid={data.placeholderImage.childImageSharp.fluid}
+                />
               )}
             />
             <Subtitle transform="none" margin="1em 0">

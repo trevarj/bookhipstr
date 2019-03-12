@@ -7,12 +7,14 @@ import { Link } from "gatsby";
 const Wrapper = styled.div`
   min-height: 150px;
   height: 100%;
-  width: 100%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
-  margin: 2em 0;
+  margin: 2em auto;
+  border-top: 1px solid #ec7673;
+  border-bottom: 1px solid #ec7673;
 `;
 
 const StyledColumn = styled(Column)`
@@ -20,16 +22,18 @@ const StyledColumn = styled(Column)`
   margin: 0 auto;
   text-align: center;
   padding: 2em 0;
-  border-top: 1px solid #ec7673;
-  border-bottom: 1px solid #ec7673;
 `;
 
-export default function PackageBanner({ title, type }) {
+export default function PackageBanner({ title }) {
   return (
     <Wrapper>
       <Zoom bottom>
         <StyledColumn>
-          <Text>{title}</Text>
+          <Text italic>{title}</Text>
+          <Text italic>
+            We guarantee a good time,{" "}
+            <span style={{ color: "#ec7673" }}>every time</span>
+          </Text>
         </StyledColumn>
       </Zoom>
     </Wrapper>

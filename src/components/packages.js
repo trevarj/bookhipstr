@@ -15,8 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const PackageImage = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 85%;
   background: ${props => props.background};
   object-fit: contain;
   background-size: cover;
@@ -26,7 +25,7 @@ const PackageImage = styled.img`
 const Grid = styled.div`
   display: grid;
   grid-gap: 50px;
-  width: 75%;
+  width: 80%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
@@ -40,7 +39,7 @@ const PackageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5em 1em;
+  padding: 2em 1em;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -55,7 +54,10 @@ const PackageLink = ({ post }) => {
   return (
     <Link to={post.frontmatter.path}>
       <PackageWrapper>
-        <PackageImage src={post.frontmatter.image} />
+        <PackageImage
+          alt={`Hipstr ${post.title} Package Image`}
+          src={post.frontmatter.image}
+        />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
           <Text>{post.frontmatter.excerpt1}</Text>
           <Text package>{post.frontmatter.excerpt2}</Text>
@@ -69,7 +71,7 @@ const Packages = () => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               id
@@ -89,7 +91,7 @@ const Packages = () => (
     `}
     render={data => (
       <Wrapper>
-        <Subtitle>
+        <Subtitle large>
           Choose your <span style={{ color: "#ec7673" }}>activation</span>
         </Subtitle>
         <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
@@ -99,7 +101,10 @@ const Packages = () => (
           ))}
         </Grid>
         <div style={{ margin: "3em 0 1em 0" }}>
-          <Button>Learn more</Button>
+          <Link to="/book-now">
+            {" "}
+            <Button>Learn more</Button>
+          </Link>
         </div>
       </Wrapper>
     )}
