@@ -61,8 +61,8 @@ export default function Splash({ src, type, title, text }) {
             fluid={src.childImageSharp.fluid}
           >
             <StyledTextColumn>
-              <Subtitle pink large>
-                {title}
+              <Subtitle large white>
+                {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
               </Subtitle>
               <Text white>{text}</Text>
             </StyledTextColumn>
