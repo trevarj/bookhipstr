@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Text, Column } from "../theme/index";
-import Logo from "./logowhite";
+import Logo from "../images/hipstrwhite.png";
 import {
   FaInstagram,
   FaFacebookF,
@@ -63,13 +63,22 @@ const StyledColumn = styled(Column)`
   }
 `;
 
+const Image = styled.img`
+  width: 200px;
+  margin: 1.5em 0 0 0;
+  @media (max-width: 500px) {
+    width: 150px;
+    margin: 0;
+  }
+`;
+
 export default function Footer() {
   return (
     <Wrapper>
       <StyledRow>
         <StyledColumn>
           <Div>
-            <Logo />
+            <Image src={Logo} alt="Hipstr Logo" />
           </Div>
           <StyledLogoRow>
             <a
@@ -116,7 +125,7 @@ export default function Footer() {
         </StyledColumn>
       </StyledRow>
       <Text white>
-        &copy; {new Date().getFullYear()} Hipstr Photobooth All rights reserved
+        &copy; {new Date().getFullYear()} Hipstr All rights reserved
       </Text>
     </Wrapper>
   );
