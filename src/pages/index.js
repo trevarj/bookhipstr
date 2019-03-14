@@ -23,7 +23,7 @@ const Div = styled.div`
 const HomePage = () => (
   <Layout>
     <Helmet
-      link={{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }}
+      link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]}
     />
     <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
     <Splash
