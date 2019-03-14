@@ -1,7 +1,7 @@
 ---
 path: /gif-package
-date: "2019-02-22"
-title: "Hipstr Gif Booth"
+date: "2019-03-10"
+title: "Gif Booth"
 image: "https://i.postimg.cc/s2pwJ86M/gifHome.png"
 splash: "../images/gifBooth.jpg"
 tagline: "Hipstr’s Gif Booth is the most branded, engaging activation available."

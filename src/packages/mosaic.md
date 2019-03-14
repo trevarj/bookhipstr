@@ -1,7 +1,7 @@
 ---
 path: /mosaic
-date: "2019-02-26"
-title: "Hipstr Mosaic Wall"
+date: "2019-03-14"
+title: "Mosaic Wall"
 image: "https://i.postimg.cc/W4W6Svmb/mosaichome1-1.png"
 splash: "../images/mosaic.jpg"
 tagline: "Hipstr’s Mosaic Wall is the most interactive photo activation ever…"

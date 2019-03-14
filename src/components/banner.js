@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Title, Column, Button } from "../theme/index";
-import Zoom from "react-reveal/Zoom";
+import Reveal from "react-reveal/Reveal";
 import { Link } from "gatsby";
 
 const Wrapper = styled.div`
@@ -24,11 +24,11 @@ const StyledColumn = styled(Column)`
 export default function Banner({ title, type }) {
   return (
     <Wrapper background={type === "bottomCta" ? "#fff" : "#000"}>
-      <Zoom bottom>
+      <Reveal effect="fadeIn">
         <StyledColumn>
           <Title white>{title}</Title>
         </StyledColumn>
-      </Zoom>
+      </Reveal>
       {type === "bottomCta" && (
         <Link to="/book-now">
           <Button>Get in touch</Button>

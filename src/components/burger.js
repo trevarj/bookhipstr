@@ -38,8 +38,8 @@ function BurgerMenu({ close }) {
         <a href="https://gallery.bookhipstr.com/browse">
           <StyledLi onClick={close}>Gallery</StyledLi>
         </a>
-        <Link to="/about">
-          <StyledLi onClick={close}>Contact</StyledLi>
+        <Link to="/book-now">
+          <StyledLi onClick={close}>Contact Us</StyledLi>
         </Link>
       </StyledUl>
     </div>
