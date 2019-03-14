@@ -1,6 +1,6 @@
 ---
 path: /hipstr-array-plus
-date: "2019-03-02"
+date: "2019-03-13"
 title: "Hipstr Array Plus"
 image: "https://i.postimg.cc/Pfpk1Dsz/array.jpg"
 splash: "../images/arraySplash.jpg"

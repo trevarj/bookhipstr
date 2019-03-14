@@ -1,6 +1,6 @@
 ---
 path: /one-ridiculous-photo-booth-package
-date: "2019-03-01"
+date: "2019-03-12"
 title: "The One Ridiculous Photo Booth Package"
 subtitle: "Our all-inclusive package will be a guaranteed good time for your next event."
 image: "https://i.postimg.cc/SsG4Hgss/oneHome.png"
