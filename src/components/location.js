@@ -47,7 +47,7 @@ const Div = styled.div`
   @media (max-width: 720px) {
     width: 95%;
     margin: 4em 0;
-    height: 175px;
+    height: 100%;
   }
 `;
 
@@ -89,7 +89,7 @@ export default function Location() {
                 />
               )}
             />
-            <Subtitle transform="none" margin="1em 0">
+            <Subtitle transform="none" margin=".5em 0">
               We'll be there for you
             </Subtitle>
           </Div>
