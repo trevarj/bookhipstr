@@ -13,8 +13,6 @@ type: "image"
 
 ### The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.
 
-You’re about to get all the things.
-
 Highlights include:
 
 - Glorious Props
