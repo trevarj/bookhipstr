@@ -1,7 +1,7 @@
 ---
 path: /installments
 date: "2019-03-09"
-title: "Hipstr Retail Kiosk"
+title: "Retail Kiosk"
 image: "https://i.postimg.cc/C1SJrNXm/install-Home.png"
 splash: "../images/installments.jpg"
 tagline: "With virtually endless possibilities, we’ll create a completely custom experience centered around your brand."

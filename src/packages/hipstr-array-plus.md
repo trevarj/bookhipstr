@@ -1,7 +1,7 @@
 ---
 path: /hipstr-array-plus
 date: "2019-03-13"
-title: "Hipstr Array Plus"
+title: "Array Plus"
 image: "https://i.postimg.cc/Pfpk1Dsz/array.jpg"
 splash: "../images/arraySplash.jpg"
 tagline: "You say the word – We’ll bring the party. When you’re ready to have us at your next event, go ahead and click the button below!"
