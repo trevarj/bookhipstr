@@ -25,6 +25,7 @@ const Grid = styled.div`
 const Information = styled.div`
   width: 100%;
   height: 100%;
+  margin: auto;
 `;
 
 const Div = styled.div`

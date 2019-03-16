@@ -2,7 +2,7 @@
 path: /hipstr-array-plus
 date: "2019-03-13"
 title: "Array Plus"
-image: "https://i.postimg.cc/Pfpk1Dsz/array.jpg"
+image: "https://i.postimg.cc/qvtcQHVp/arrayplus.gif"
 splash: "../images/arraySplash.jpg"
 tagline: "You say the word – We’ll bring the party. When you’re ready to have us at your next event, go ahead and click the button below!"
 excerpt1: "Multiple cameras. A single moment."
@@ -11,4 +11,4 @@ subtitle: "Why limit your photo booth experience to one camera? That’s exactly
 type: "image"
 ---
 
-<img alt="Array Grid" src="../images/arrayGrid.jpg">
+<img alt="Array Grid" src="https://i.postimg.cc/xdLH8B45/array.gif">
