@@ -11,4 +11,4 @@ subtitle: "Why limit your photo booth experience to one camera? That’s exactly
 type: "image"
 ---
 
-<img alt="Array Grid" src="../images/arrayGrid.jpg">
+<img alt="Array Grid" src="https://i.postimg.cc/xdLH8B45/array.gif">
