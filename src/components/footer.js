@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Wrapper = styled.div`
-  height: 200px;
+  height: auto;
   width: 100%;
   background: #2b2b2b;
   display: flex;
