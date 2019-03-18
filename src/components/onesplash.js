@@ -4,7 +4,7 @@ import { Text, Subtitle, Button } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 95vh;
+  height: auto;
   background: #303133;
   @media (max-width: 720px) {
     height: 100%;
