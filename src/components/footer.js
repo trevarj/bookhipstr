@@ -125,7 +125,7 @@ export default function Footer() {
         </StyledColumn>
       </StyledRow>
       <Text white>
-        &copy; {new Date().getFullYear()} Hipstr All rights reserved
+        &copy; {new Date().getFullYear()} Hipstr, INC. All rights reserved
       </Text>
     </Wrapper>
   );

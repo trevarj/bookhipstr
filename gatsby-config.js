@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Hipstr Photobooth`,
-    description: `Hipstr Photobooth`,
+    title: `Nationwide Photo and Video Activations`,
+    description: `Not your average photo booth rental; we're an experience | New York, Los Angeles, Miami, Chicago, Boston, Denver, San Francisco, Dallas, Philadelphia & more`,
     author: `@wwwhatley`
   },
   plugins: [

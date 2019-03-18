@@ -80,7 +80,7 @@ export default function OneSplash() {
 
         <VideoWrapper>
           <IframeDesktop
-            title="Stop Being Average"
+            title="One"
             src="https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
             width="640"
             height="320"
@@ -95,7 +95,7 @@ export default function OneSplash() {
             }}
           />
           <IframeMobile
-            title="Stop Being Average"
+            title="One"
             src="https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
             width="640"
             style={{

@@ -3,10 +3,9 @@ import styled, { css } from "styled-components";
 export const Title = styled.h2`
   font-size: 48px;
   font-weight: 600;
-  margin: 0;
+  margin: ${props => props.margin || "0"};
   font-family: "Poppins Bold", sans-serif;
   color: ${props => (props.pink ? "#ec7673" : "#2b2b2b")};
-
   ${props =>
     props.white &&
     css`
@@ -125,6 +124,12 @@ export const Text = styled.p`
       text-transform: uppercase;
       font-weight: 400;
       font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
+    props.thankyou &&
+    css`
+      line-height: 54px;
+      font-size: 24px;
     `};
 `;
 
