@@ -48,7 +48,7 @@ function Form() {
         style={{
           width: "10px",
           minWidth: "100%",
-          height: "740px",
+          height: "780px",
           border: "none"
         }}
         scrolling="no"
