@@ -17,7 +17,7 @@ const Grid = styled.div`
   grid-auto-rows: auto;
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
-    grid-auto-rows: 800px;
+    grid-auto-rows: auto;
     width: 95%;
   }
 `;
