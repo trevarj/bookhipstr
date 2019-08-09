@@ -9,6 +9,7 @@ excerpt1: "Engage your audience."
 excerpt2: "CAPTURE DATA"
 type: "image"
 subtitle: "The Hipstr Gif Booth is meant to provide engaging, branded experiences for guests. With its sleek look and minimal footprint, it will be an ideal way for you to engage your audiences and capture data."
+key: "package"
 ---
 
 <img alt="Hipstr Gif Booth" src="../images/gifBoothGrid.jpg">

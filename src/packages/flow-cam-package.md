@@ -9,6 +9,7 @@ tagline: "Hipstr’s Flow Cam is the most seamless photo activation ever…"
 excerpt1: "A unique experience with bullet-time GIFs & more."
 excerpt2: "SURE TO IMPRESS."
 type: "image"
+key: "package"
 ---
 
 <img alt="Hipstr Flow Cam" src="../images/flow.jpg">
