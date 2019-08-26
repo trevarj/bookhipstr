@@ -91,11 +91,6 @@ const Packages = () => (
       }
     `}
     render={data => {
-      let newArr = data.allMarkdownRemark.edges.filter(edge => {
-        if (edge.node.frontmatter.key === "package") {
-          return [...edge];
-        }
-      });
       return (
         <Wrapper>
           <Subtitle large>
@@ -103,7 +98,7 @@ const Packages = () => (
           </Subtitle>
           <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
           <Grid>
-            {newArr.map(edge => (
+            {data.allMarkdownRemark.edges.map(edge => (
               <PackageLink key={edge.node.id} post={edge.node} />
             ))}
           </Grid>
