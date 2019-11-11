@@ -91,7 +91,7 @@ class Navigation extends Component {
             <Burger />
           </Div>
           <StyledRow>
-            <a href="https://gallery.bookhipstr.com/browse">
+            <a href="https://gallery.bookhipstr.com">
               <Text nav>Gallery</Text>
             </a>
             <a href="tel:8442665447">
