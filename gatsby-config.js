@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Hipstr Photobooth`,
-    description: `Hipstr Photobooth`,
+    title: `Nationwide Photo and Video Activations`,
+    description: `Not your average photo booth rental; we're an experience | New York, Los Angeles, Miami, Chicago, Boston, Denver, San Francisco, Dallas, Philadelphia & more`,
     author: `@wwwhatley`
   },
   plugins: [
@@ -49,16 +49,14 @@ module.exports = {
       options: {
         trackingId: "UA-54974019-1",
         // Puts tracking script in the head instead of the body
-        head: false,
+        head: true
         // Setting this parameter is optional
-        anonymize: true,
+
         // Setting this parameter is also optional
-        respectDNT: true,
+
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+
         // Enables Google Optimize using your container Id
-        sampleRate: 5,
-        siteSpeedSampleRate: 10
       }
     },
     {

@@ -22,7 +22,7 @@ const VideoWrapper = styled.div`
 `;
 
 const StyledImg = styled(BackgroundImage)`
-  height: 700px;
+  height: 800px;
   display: flex;
   margin: 0 auto;
   justify-content: flex-end;

@@ -25,7 +25,10 @@ const HomePage = () => (
     <Helmet
       link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]}
     />
-    <SEO title="Home" keywords={[`photobooth`, `newyork`, `events`, `party`]} />
+    <SEO
+      title="Hipstr Photo Booth"
+      keywords={[`photobooth`, `newyork`, `events`, `party`]}
+    />
     <Splash
       type="video"
       src="https://player.vimeo.com/video/254001359?background=1"

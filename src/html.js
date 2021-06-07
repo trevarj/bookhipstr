@@ -13,6 +13,14 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta
+          property="og:title"
+          content="Hipstr Photo Booth | Nationwide photo and video activations"
+        />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/prHn3GJx/Screen-Shot-2019-04-08-at-9-33-35-AM.png"
+        />
         <link
           rel="shortcut icon"
           type="image/png"

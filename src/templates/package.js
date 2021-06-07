@@ -11,7 +11,7 @@ import SEO from "../components/seo";
 const Grid = styled.div`
   display: grid;
   grid-gap: 50px;
-  width: 80%;
+  width: 85%;
   margin: 1em auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
@@ -26,6 +26,7 @@ const Information = styled.div`
   width: 100%;
   height: 100%;
   margin: auto;
+  margin-top: 1em;
 `;
 
 const Div = styled.div`
@@ -48,7 +49,7 @@ function Form() {
         style={{
           width: "10px",
           minWidth: "100%",
-          height: "715px",
+          height: "1000px",
           border: "none"
         }}
         scrolling="no"
@@ -82,7 +83,8 @@ export default function Package({ data }) {
           className="package"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <Form />
+
+        <Form type={frontmatter.path} />
       </Grid>
       <PackageBanner title={frontmatter.tagline} />
       <Testimonials />

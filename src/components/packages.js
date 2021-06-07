@@ -83,31 +83,34 @@ const Packages = () => (
                 image
                 excerpt1
                 excerpt2
+                key
               }
             }
           }
         }
       }
     `}
-    render={data => (
-      <Wrapper>
-        <Subtitle large>
-          Choose your <span style={{ color: "#ec7673" }}>activation</span>
-        </Subtitle>
-        <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
-        <Grid>
-          {data.allMarkdownRemark.edges.map(edge => (
-            <PackageLink key={edge.node.id} post={edge.node} />
-          ))}
-        </Grid>
-        <div style={{ margin: "3em 0 1em 0" }}>
-          <Link to="/book-now">
-            {" "}
-            <Button>Learn more</Button>
-          </Link>
-        </div>
-      </Wrapper>
-    )}
+    render={data => {
+      return (
+        <Wrapper>
+          <Subtitle large>
+            Choose your <span style={{ color: "#ec7673" }}>activation</span>
+          </Subtitle>
+          <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
+          <Grid>
+            {data.allMarkdownRemark.edges.map(edge => (
+              <PackageLink key={edge.node.id} post={edge.node} />
+            ))}
+          </Grid>
+          <div style={{ margin: "3em 0 1em 0" }}>
+            <Link to="/book-now">
+              {" "}
+              <Button>Learn more</Button>
+            </Link>
+          </div>
+        </Wrapper>
+      );
+    }}
   />
 );
 

@@ -9,6 +9,7 @@ tagline: "Weddings, Birthdays, Mitzvahs, Sweet 16s, Anniversaries, Engagements â
 excerpt1: "The most comprehensive, all-in-one photo booth package."
 excerpt2: "EVER."
 type: "image"
+key: "package"
 ---
 
 ### The most comprehensive experience ever, weâ€™ve removed the hassle of a la carte options and hourly rates.

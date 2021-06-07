@@ -4,7 +4,7 @@ import { Text, Subtitle, Button } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 95vh;
+  height: auto;
   background: #303133;
   @media (max-width: 720px) {
     height: 100%;
@@ -80,7 +80,7 @@ export default function OneSplash() {
 
         <VideoWrapper>
           <IframeDesktop
-            title="Stop Being Average"
+            title="One"
             src="https://player.vimeo.com/video/541631684"
             width="640"
             height="320"
@@ -95,8 +95,8 @@ export default function OneSplash() {
             }}
           />
           <IframeMobile
-            title="Stop Being Average"
-            src="https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
+            title="One"
+            src="https://player.vimeo.com/video/54163168"
             width="640"
             style={{
               border: 0,
