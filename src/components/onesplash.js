@@ -69,8 +69,8 @@ export default function OneSplash() {
       <Div />
       <StyledColumn>
         <Subtitle one>
-          The One <span style={{ color: "#ec7673" }}>Ridiculous</span> Photo
-          Booth Package
+          The <span style={{ color: "#ec7673" }}>Ultimate</span> Photo Booth
+          Package
         </Subtitle>
         <Text one>
           Our all-inclusive package will be a guaranteed good time for your next
@@ -81,7 +81,7 @@ export default function OneSplash() {
         <VideoWrapper>
           <IframeDesktop
             title="One"
-            src="https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
+            src="https://player.vimeo.com/video/541631684"
             width="640"
             height="320"
             style={{
@@ -91,12 +91,12 @@ export default function OneSplash() {
               right: 0,
               margin: "auto",
               top: "50%",
-              transform: "translateY(-50%)"
+              transform: "translateY(-50%)",
             }}
           />
           <IframeMobile
             title="One"
-            src="https://player.vimeo.com/video/262031484?autoplay=1&title=0&byline=0&portrait=0"
+            src="https://player.vimeo.com/video/54163168"
             width="640"
             style={{
               border: 0,
@@ -105,7 +105,7 @@ export default function OneSplash() {
               right: 0,
               margin: "auto",
               top: "50%",
-              transform: "translateY(-50%)"
+              transform: "translateY(-50%)",
             }}
           />
         </VideoWrapper>

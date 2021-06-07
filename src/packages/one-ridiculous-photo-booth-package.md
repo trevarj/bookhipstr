@@ -1,7 +1,7 @@
 ---
 path: /one-ridiculous-photo-booth-package
 date: "2019-03-12"
-title: "The One Ridiculous Photo Booth Package"
+title: "The Ultimate Photo Booth Package"
 subtitle: "Our all-inclusive package will be a guaranteed good time for your next event."
 image: "https://i.postimg.cc/SsG4Hgss/oneHome.png"
 splash: "../images/oneRid.jpg"
@@ -18,12 +18,10 @@ Highlights include:
 
 - Glorious Props
 - Unlimited Prints
-- Hashtag Printing
 - Photo Scrapbook
-- Live Photo Slideshow
 - Custom Print Designs
 - An On-Site Hipstr Host
 - On-Site Social Sharing
-- Up to 6 hours of pure event time
+- Up to 4 hours of pure event time
 
-### We know – it’s ridiculous. Complete the form to see how we can take your upcoming event to the next level!
+### We know – it’s ridiculously good. Complete the form to see how we can take your upcoming event to the next level!
