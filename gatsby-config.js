@@ -2,29 +2,29 @@ module.exports = {
   siteMetadata: {
     title: `Nationwide Photo and Video Activations`,
     description: `Not your average photo booth rental; we're an experience | New York, Los Angeles, Miami, Chicago, Boston, Denver, San Francisco, Dallas, Philadelphia & more`,
-    author: `@wwwhatley`
+    author: `@wwwhatley`,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: "pages",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/packages`
-      }
+        path: `${__dirname}/src/packages`,
+      },
     },
     `gatsby-transformer-javascript-frontmatter`,
     `gatsby-plugin-react-helmet`,
@@ -38,18 +38,18 @@ module.exports = {
             options: {
               maxWidth: 650,
               linkImagesToOriginal: false,
-              backgroundColor: "transparent"
-            }
-          }
-        ]
-      }
+              backgroundColor: "transparent",
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-54974019-1",
         // Puts tracking script in the head instead of the body
-        head: true
+        head: true,
         // Setting this parameter is optional
 
         // Setting this parameter is also optional
@@ -57,13 +57,13 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
 
         // Enables Google Optimize using your container Id
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: "182915612330648"
-      }
+        pixelId: "547082322848880",
+      },
     },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
@@ -77,12 +77,12 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon-72x72.png` // This path is relative to the root of the site.
-      }
-    }
+        icon: `src/images/icon-72x72.png`, // This path is relative to the root of the site.
+      },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ]
+  ],
 };
