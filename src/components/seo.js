@@ -29,6 +29,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 type: "image/png",
                 sizes: "72x72",
                 href: `${favicon72}`
+              },
+              {
+                rel: "canonical",
+                href: `${window.location.href}`
               }
             ]}
             title={title}
