@@ -12,7 +12,7 @@ type: "image"
 key: "package"
 ---
 
-### The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.
+## The most comprehensive experience ever, we’ve removed the hassle of a la carte options and hourly rates.
 
 Highlights include:
 
@@ -24,4 +24,18 @@ Highlights include:
 - On-Site Social Sharing
 - Up to 4 hours of pure event time
 
-### We know – it’s ridiculously good. Complete the form to see how we can take your upcoming event to the next level!
+## We know – it’s ridiculously good. Complete the form to see how we can take your upcoming event to the next level!
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Hipstr Halo Video Package",
+  "description": "Hipstr Halo Video Package",
+  "thumbnailUrl": "https://i.vimeocdn.com/video/1121392869-b8ae8d7f2afef787b0052006c315c2bc0f1bbaf2e13cfcb4581e38e446352e06-d_1280x720",
+  "uploadDate": "2021-04-26",
+  "duration": "PT1M25S",
+  "contentUrl": "https://vimeo.com/541631684",
+  "embedUrl": "https://player.vimeo.com/video/541631684?h=c70cdabf95"
+}
+</script>

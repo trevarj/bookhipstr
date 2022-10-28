@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BackgroundImage from "gatsby-background-image";
 // import Logo from "./logo";
-import { Text, Subtitle } from "../theme/index";
+import { Text, Subtitle, NPAtitle } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -61,10 +61,13 @@ export default function Splash({ src, type, title, text }) {
             fluid={src.childImageSharp.fluid}
           >
             <StyledTextColumn>
-              <Subtitle large white>
-                {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
-              </Subtitle>
-              <Text white>{text}</Text>
+                {window.location.pathname === '/hipstr-array-plus' && <NPAtitle large white>
+                  {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
+                </NPAtitle>}
+                {window.location.pathname !== '/hipstr-array-plus' && <Subtitle large white>
+                  {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
+                </Subtitle>}
+                <Text white>{text}</Text>
             </StyledTextColumn>
           </StyledImg>
         </Wrapper>

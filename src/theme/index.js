@@ -1,5 +1,85 @@
 import styled, { css } from "styled-components";
 
+export const NPAtitle = styled.h1`
+  font-size: ${props => (props.large ? "32px" : "26px")};
+  font-weight: 700;
+  font-family: "Poppins Bold", sans-serif;
+  line-height: 1.4em;
+  margin: ${props => props.margin || "0.5em 0"};
+  text-transform: ${props => props.transform || "uppercase"};
+  color: ${props => (props.pink ? "#ec7673" : props.white ? "#fff" : "#000")};
+  ${props =>
+    props.testimonial &&
+    css`
+      font-size: 29px;
+      color: #fff;
+      line-height: 51px;
+    `};
+  ${props =>
+    props.banner &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 400;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
+    props.one &&
+    css`
+      font-size: 48px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+`;
+
+export const NPAtitleH2 = styled.h2`
+  font-size: ${props => (props.large ? "32px" : "26px")};
+  font-weight: 700;
+  font-family: "Poppins Bold", sans-serif;
+  line-height: 1.4em;
+  margin: ${props => props.margin || "0.5em 0"};
+  text-transform: ${props => props.transform || "uppercase"};
+  color: ${props => (props.pink ? "#ec7673" : props.white ? "#fff" : "#000")};
+  ${props =>
+    props.testimonial &&
+    css`
+      font-size: 29px;
+      color: #fff;
+      line-height: 51px;
+    `};
+  ${props =>
+    props.banner &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 400;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
+    props.one &&
+    css`
+      font-size: 48px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+`;
+
 export const Title = styled.h2`
   font-size: 48px;
   font-weight: 600;
@@ -19,6 +99,46 @@ export const Title = styled.h2`
 `;
 
 export const Subtitle = styled.h3`
+  font-size: ${props => (props.large ? "32px" : "26px")};
+  font-weight: 700;
+  font-family: "Poppins Bold", sans-serif;
+  line-height: 1.4em;
+  margin: ${props => props.margin || "0.5em 0"};
+  text-transform: ${props => props.transform || "uppercase"};
+  color: ${props => (props.pink ? "#ec7673" : props.white ? "#fff" : "#000")};
+  ${props =>
+    props.testimonial &&
+    css`
+      font-size: 29px;
+      color: #fff;
+      line-height: 51px;
+    `};
+  ${props =>
+    props.banner &&
+    css`
+      font-size: 24px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 400;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  ${props =>
+    props.one &&
+    css`
+      font-size: 48px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 600;
+      text-transform: none;
+      font-family: "Poppins Regular", sans-serif;
+    `};
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+`;
+
+export const NPAparagraph = styled.p`
   font-size: ${props => (props.large ? "32px" : "26px")};
   font-weight: 700;
   font-family: "Poppins Bold", sans-serif;

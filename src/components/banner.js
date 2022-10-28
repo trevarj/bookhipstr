@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Title, Column, Button } from "../theme/index";
+import { Title, NPAparagraph, Column, Button } from "../theme/index";
 import Reveal from "react-reveal/Reveal";
 import { Link } from "gatsby";
 
@@ -26,7 +26,7 @@ export default function Banner({ title, type }) {
     <Wrapper background={type === "bottomCta" ? "#fff" : "#000"}>
       <Reveal effect="fadeIn">
         <StyledColumn>
-          <Title white>{title}</Title>
+          {title !== undefined && <Title  white>{title}</Title>}
         </StyledColumn>
       </Reveal>
       {type === "bottomCta" && (

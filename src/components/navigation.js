@@ -85,7 +85,7 @@ class Navigation extends Component {
           style={{ width: "80%", height: "100%" }}
         >
           <Link to="/">
-            <Image src={Logo} />
+            <Image src={Logo} alt="Hipstr Photo Booth | Nationwide Photo and Video Activations" />
           </Link>
           <Div>
             <Burger />

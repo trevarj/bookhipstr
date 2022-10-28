@@ -6,12 +6,27 @@ import favicon96 from "../images/icon-96x96.png";
 import favicon72 from "../images/icon-72x72.png";
 
 function SEO({ description, lang, meta, keywords, title }) {
+  const NPAslug = window.location.pathname
+  let NPAseoTitle = null
+  let NPAseoDescription = null
+  switch(NPAslug) {
+  case '/hipstr-array-plus':
+    NPAseoTitle = 'Hipstr Array Plus | 3D Photo Booth | Hipstr'
+    NPAseoDescription = 'Hipstr Array Plus is a multi-camera setup that takes single, frozen moments and creates 3-D photo booth animations for instant social media sharing. Learn more!'
+    break;
+  case '/one-ridiculous-photo-booth-package':
+    NPAseoTitle = 'Ultimate Photo Booth Package | Photo Booth Bundle | Hipstr'
+    NPAseoDescription = "Hipstr's photo booth package is not your average photo booth rental, we are an experience. Located in many cities, visit our website to learn more today."
+    break;
+  default:
+    break;
+  }
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description;
+          NPAseoDescription !== null ? NPAseoDescription : description || data.site.siteMetadata.description;
         return (
           <Helmet
             htmlAttributes={{
@@ -36,7 +51,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               }
             ]}
             title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            titleTemplate={NPAseoTitle !== null ? NPAseoTitle : `%s | ${data.site.siteMetadata.title}`} 
             meta={[
               {
                 name: `description`,

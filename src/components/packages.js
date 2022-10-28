@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, graphql, StaticQuery } from "gatsby";
-import { Subtitle, Text, Button } from "../theme/index";
+import { NPAtitleH2, Text, Button } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -49,13 +49,45 @@ const PackageWrapper = styled.div`
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   }
 `;
-
+let NPAaltText = null
 const PackageLink = ({ post }) => {
+  switch(post.frontmatter.path){
+  case '/mosaic': 
+    NPAaltText = 'Hipstr Mosaic Wall Package'
+    break;
+  case '/hipstr-array-plus': 
+    NPAaltText = 'Hipstr Array Plus'
+    break;
+  case '/one-ridiculous-photo-booth-package': 
+    NPAaltText = "Hipstr's One Ridiculous Photo Booth Package"
+    break;
+  case '/flow-cam-package': 
+    NPAaltText = 'Hipstr Flow Cam'
+    break;
+  case '/videography': 
+    NPAaltText = 'Hipstr Videography'
+    break;
+  case '/photography': 
+    NPAaltText = 'Hipstr photography'
+    break;
+  case '/gif-package': 
+    NPAaltText = 'Hipstr Gif Photo Booth'
+    break;
+  case '/installments': 
+    NPAaltText = 'Hipstr Retail Installments'
+    break;
+  case '/hashtag-printing': 
+    NPAaltText = 'Hipstr Hashtag Instant Print'
+    break;
+  default: 
+    break;
+}
   return (
     <Link to={post.frontmatter.path}>
+      {console.log(post.frontmatter.path)}
       <PackageWrapper>
         <PackageImage
-          alt={`Hipstr ${post.title} Package Image`}
+          alt={NPAaltText !== null ? NPAaltText : `Hipstr ${post.title} Package Image`}
           src={post.frontmatter.image}
         />
         <div style={{ width: "75%", textAlign: "center", margin: ".75em 0" }}>
@@ -93,9 +125,9 @@ const Packages = () => (
     render={data => {
       return (
         <Wrapper>
-          <Subtitle large>
+          <NPAtitleH2 large>
             Choose your <span style={{ color: "#ec7673" }}>activation</span>
-          </Subtitle>
+          </NPAtitleH2>
           <Text style={{ marginBottom: "1em" }}>Click to learn more!</Text>
           <Grid>
             {data.allMarkdownRemark.edges.map(edge => (
