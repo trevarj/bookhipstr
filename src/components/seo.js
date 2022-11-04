@@ -14,6 +14,10 @@ function SEO({ description, lang, meta, keywords, title }) {
     NPAseoTitle = 'Hipstr Array Plus | 3D Photo Booth | Hipstr'
     NPAseoDescription = 'Hipstr Array Plus is a multi-camera setup that takes single, frozen moments and creates 3-D photo booth animations for instant social media sharing. Learn more!'
     break;
+  case '/mosaic':
+    NPAseoTitle = 'Photo Mosaic Wall | Hipstr'
+    NPAseoDescription = "Not your average event photo wall; we're an experience. Elevate your next event with an interactive photo wall."
+    break;
   case '/one-ridiculous-photo-booth-package':
     NPAseoTitle = 'Ultimate Photo Booth Package | Photo Booth Bundle | Hipstr'
     NPAseoDescription = "Hipstr's photo booth package is not your average photo booth rental, we are an experience. Located in many cities, visit our website to learn more today."
