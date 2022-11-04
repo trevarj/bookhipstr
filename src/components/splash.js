@@ -1,8 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 import BackgroundImage from "gatsby-background-image";
-// import Logo from "./logo";
-import { Text, Subtitle, NPAtitle } from "../theme/index";
+import { Text, NPAtitle } from "../theme/index";
+
+export const NPAtitleH2 = styled.h2`
+  font-size: ${props => (props.large ? "26px" : "22px")};
+  font-weight: 700;
+  font-family: "Poppins Regular", sans-serif;
+  line-height: 1.4em;
+  margin: ${props => props.margin || "0.5em 0"};
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+`;
+
+export const NPAContentParagraph = styled.p`
+  font-size: ${props => (props.large ? "26px" : "15px")};
+  font-weight: 400;
+  font-family: "Poppins Regular",sans-serif;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: ${props => props.margin || "0.5em 0"};
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+`;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -61,13 +86,16 @@ export default function Splash({ src, type, title, text }) {
             fluid={src.childImageSharp.fluid}
           >
             <StyledTextColumn>
-                {window.location.pathname === '/hipstr-array-plus' && <NPAtitle large white>
+                <NPAtitle large white>
                   {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
-                </NPAtitle>}
-                {window.location.pathname !== '/hipstr-array-plus' && <Subtitle large white>
-                  {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
-                </Subtitle>}
+                </NPAtitle>
+                {window.location.pathname === "/mosaic" && (
+                <NPAtitleH2>An Interactive Photo Mosaic Wall Experience</NPAtitleH2>
+                )}
                 <Text white>{text}</Text>
+            {window.location.pathname === "/mosaic" && (
+                <NPAContentParagraph>Instantly enhance your next event with a photo mosaic wall rental that's fun for everyone.</NPAContentParagraph>
+            )}
             </StyledTextColumn>
           </StyledImg>
         </Wrapper>
