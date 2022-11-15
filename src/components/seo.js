@@ -6,6 +6,9 @@ import favicon96 from "../images/icon-96x96.png";
 import favicon72 from "../images/icon-72x72.png";
 
 function SEO({ description, lang, meta, keywords, title }) {
+  if(typeof window !== "undefined"){
+    return;
+  }
   const NPAslug = window.location.pathname
   let NPAseoTitle = null
   let NPAseoDescription = null
