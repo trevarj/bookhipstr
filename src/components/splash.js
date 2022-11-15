@@ -76,47 +76,52 @@ const StyledTextColumn = styled.div`
 `;
 
 export default function Splash({ src, type, title, text }) {
-  return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <Div />
-      {type === "image" && (
-        <Wrapper>
-          <StyledImg
-            alt={`Hipstr ${title} Package Splash`}
-            fluid={src.childImageSharp.fluid}
-          >
-            <StyledTextColumn>
+  if (typeof window !== "undefined") {
+    return (
+      <div style={{ width: "100%", height: "100%" }}>
+        <Div />
+        {type === "image" && (
+          <Wrapper>
+            <StyledImg
+              alt={`Hipstr ${title} Package Splash`}
+              fluid={src.childImageSharp.fluid}
+            >
+              <StyledTextColumn>
                 <NPAtitle large white>
                   {<span style={{ color: "#ec7673" }}>Hipstr</span>} {title}
                 </NPAtitle>
                 {window.location.pathname === "/mosaic" && (
-                <NPAtitleH2>An Interactive Photo Mosaic Wall Experience</NPAtitleH2>
+                  <NPAtitleH2>An Interactive Photo Mosaic Wall Experience</NPAtitleH2>
                 )}
                 <Text white>{text}</Text>
-            {window.location.pathname === "/mosaic" && (
-                <NPAContentParagraph>Instantly enhance your next event with a photo mosaic wall rental that's fun for everyone.</NPAContentParagraph>
-            )}
-            </StyledTextColumn>
-          </StyledImg>
-        </Wrapper>
-      )}
-      {type !== "image" && (
-        <VideoWrapper>
-          <iframe
-            title={src}
-            src={src}
-            allowFullScreen
-            style={{
-              border: 0,
-              width: "100%",
-              height: "100%",
-              position: "absolute",
-              top: 0,
-              left: 0
-            }}
-          />
-        </VideoWrapper>
-      )}
-    </div>
-  );
+                {window.location.pathname === "/mosaic" && (
+                  <NPAContentParagraph>Instantly enhance your next event with a photo mosaic wall rental that's fun for everyone.</NPAContentParagraph>
+                )}
+              </StyledTextColumn>
+            </StyledImg>
+          </Wrapper>
+        )}
+        {type !== "image" && (
+          <VideoWrapper>
+            <iframe
+              title={src}
+              src={src}
+              allowFullScreen
+              style={{
+                border: 0,
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0
+              }}
+            />
+          </VideoWrapper>
+        )}
+      </div>
+    );
+  }
+  else {
+    return null;
+  }
 }
