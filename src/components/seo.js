@@ -107,6 +107,9 @@ function SEO({ description, lang, meta, keywords, title }) {
       />
     );
   }
+  else {
+    return null;
+  }
 }
 
 SEO.defaultProps = {
