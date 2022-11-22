@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Subtitle, Column } from "../theme/index";
+import { Text, NPAtitle, Column } from "../theme/index";
 import styled from "styled-components";
 import Slide from "react-reveal/Slide";
 import { StaticQuery, graphql } from "gatsby";
@@ -56,10 +56,10 @@ const Content = ({ title, title2, text, type }) => (
     </div>
     <StyledColumn textalign={type === "package" && "center"}>
       <Slide bottom>
-        <Subtitle banner>
+        <NPAtitle banner>
           {title}
           <span style={{ color: "#ec7673" }}> {title2}</span>
-        </Subtitle>
+        </NPAtitle>
         <Text white>{text}</Text>
       </Slide>
     </StyledColumn>

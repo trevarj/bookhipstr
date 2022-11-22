@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Column, Subtitle, Text } from "../theme/index";
+import { Column, NPAparagraph, Text } from "../theme/index";
 import Reveal from "react-reveal/Reveal";
 
 const Wrapper = styled.div`
@@ -78,9 +78,9 @@ export default class Testimonial extends Component {
       <Wrapper>
         <StyledColumn>
           <Reveal effect="fadeIn">
-            <Subtitle testimonial transform="none">{`"${
+            <NPAparagraph testimonial transform="none">{`"${
               this.state.testimonial.text
-            }"`}</Subtitle>
+            }"`}</NPAparagraph>
             <Text white>{`-${this.state.testimonial.author}`}</Text>
           </Reveal>
         </StyledColumn>

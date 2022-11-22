@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Subtitle, Column, Row, Button } from "../theme/index";
+import { Text, NPAtitleH2, NPAparagraph, Column, Row, Button } from "../theme/index";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Slide from "react-reveal/Slide";
@@ -55,9 +55,9 @@ export default function Location() {
   return (
     <Wrapper>
       <Slide bottom>
-        <Subtitle large>
+        <NPAtitleH2 large>
           Choose your <span style={{ color: "#ec7673" }}>location</span>
-        </Subtitle>
+        </NPAtitleH2>
         <StyledRow>
           <StyledColumn>
             <Text large blue location>
@@ -89,9 +89,9 @@ export default function Location() {
                 />
               )}
             />
-            <Subtitle transform="none" margin=".5em 0">
+            <NPAparagraph transform="none" margin=".5em 0">
               We'll be there for you
-            </Subtitle>
+            </NPAparagraph>
           </Div>
         </StyledRow>
       </Slide>

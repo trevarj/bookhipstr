@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Subtitle, Text, Column, Button } from "../theme/index";
+import { NPAtitleH2, Text, Column, Button } from "../theme/index";
 import experience1 from "../images/experience1.jpg";
 import experience2 from "../images/experience2.jpg";
 import experience3 from "../images/experience3.jpg";
@@ -77,11 +77,18 @@ const images = [
       "Weddings, Birthdays, Mitzvahs, Parties, Sweet 16s, Anniversaries, Engagements – you name it, we’ll celebrate it with you! We guarantee a good time, every time."
   }
 ];
+let NPAExpAltText = null
 
 function Experience({ image, title, description }) {
+  if(title !== ''){
+    NPAExpAltText = title
+  }
+  else{
+    NPAExpAltText = 'Hipstr Experience Images'
+  }
   return (
     <StyledExperience>
-      <Image alt="Hipstr Experience Images" src={image} />
+      <Image alt={NPAExpAltText} src={image} />
       <Column width="90%" alignitems="center" margin="0 auto">
         <Text uppercase large black>
           {title}
@@ -94,9 +101,9 @@ function Experience({ image, title, description }) {
 
 const Experiences = () => (
   <Wrapper>
-    <Subtitle large>
+    <NPAtitleH2 large>
       Choose your <span style={{ color: "#ec7673" }}>experience</span>
-    </Subtitle>
+    </NPAtitleH2>
     <Grid>
       {images.map((key, index) => (
         <Experience

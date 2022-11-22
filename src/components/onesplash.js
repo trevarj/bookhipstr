@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Subtitle, Button } from "../theme/index";
+import { Text, NPAtitle, Button } from "../theme/index";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -68,10 +68,10 @@ export default function OneSplash() {
     <Wrapper>
       <Div />
       <StyledColumn>
-        <Subtitle one>
+        <NPAtitle one>
           The <span style={{ color: "#ec7673" }}>Ultimate</span> Photo Booth
           Package
-        </Subtitle>
+        </NPAtitle>
         <Text one>
           Our all-inclusive package will be a guaranteed good time for your next
           event.
