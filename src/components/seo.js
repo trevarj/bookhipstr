@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 },
                 {
                   rel: "canonical",
-                  href: `${window.location.href}`
+                  href: `${window.location.href.split('?')[0]}`
                 }
               ]}
               title={title}

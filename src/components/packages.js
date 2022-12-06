@@ -84,7 +84,6 @@ const PackageLink = ({ post }) => {
 }
   return (
     <Link to={post.frontmatter.path}>
-      {console.log(post.frontmatter.path)}
       <PackageWrapper>
         <PackageImage
           alt={NPAaltText !== null ? NPAaltText : `Hipstr ${post.title} Package Image`}
